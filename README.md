@@ -1,7 +1,10 @@
 ## HuggleStation
 Based and maintained from TgStation.
-
 Based off of PampieStations content.
+
+
+
+
 [![Build Status](https://api.travis-ci.org/TyrianTyrell/PampieStationRecoded.png)](https://travis-ci.org/TyrianTyrell/PampieStationRecoded) 
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/TyrianTyrell/PampieStationRecoded.svg)](http://isitmaintained.com/project/TyrianTyrell/PampieStationRecoded "Percentage of issues still open")  
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/TyrianTyrell/PampieStationRecoded.svg)](http://isitmaintained.com/project/TyrianTyrell/PampieStationRecoded "Average time to resolve an issue")
