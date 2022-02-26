@@ -1,0 +1,12 @@
+#this is a bad system but I'm lazy so it piggybacks off config loader system.
+#Specify group followed by ckey for each ckey.
+
+PATREON_DONATORS TyrianTyrell
+
+PATREON_DONATORS WanderingFox95
+
+PATREON_DONATORS GreenTea98
+
+PATREON_DONATORS Cammi
+
+PATREON_DONATORS Shootmister

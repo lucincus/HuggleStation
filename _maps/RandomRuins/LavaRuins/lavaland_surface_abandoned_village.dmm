@@ -1,0 +1,1315 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aa" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/plating/rust,
+/area/lavaland/surface/outdoors)
+"ac" = (
+/turf/open/floor/plating/rust,
+/area/lavaland/surface/outdoors)
+"ay" = (
+/turf/open/floor/carpet,
+/area/ruin/powered)
+"aM" = (
+/turf/open/floor/wood,
+/area/ruin/powered)
+"aP" = (
+/obj/structure/dresser,
+/turf/open/floor/wood,
+/area/ruin/powered)
+"aZ" = (
+/obj/structure/sign/poster/ripped,
+/turf/closed/wall/rust,
+/area/lavaland/surface/outdoors)
+"bR" = (
+/obj/machinery/light/small/broken{
+	dir = 4
+	},
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/lavaland/surface/outdoors)
+"cj" = (
+/obj/structure/table,
+/obj/item/reagent_containers/food/snacks/fishandchips,
+/turf/open/floor/plasteel/checker,
+/area/ruin/powered)
+"cB" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/wood,
+/area/ruin/powered)
+"dh" = (
+/obj/machinery/door/airlock/wood,
+/obj/structure/barricade/wooden/crude/snow,
+/turf/open/floor/wood,
+/area/ruin/powered)
+"fD" = (
+/obj/structure/bed,
+/obj/item/bedsheet/random,
+/obj/effect/decal/cleanable/blood/drip,
+/turf/open/floor/wood,
+/area/ruin/powered)
+"gG" = (
+/obj/structure/table/wood,
+/obj/item/reagent_containers/food/snacks/sashimi{
+	pixel_y = 10
+	},
+/obj/item/reagent_containers/food/drinks/mug/coco{
+	pixel_x = -10
+	},
+/obj/item/reagent_containers/food/drinks/mug/coco{
+	pixel_x = 10;
+	pixel_y = -4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/carpet,
+/area/ruin/powered)
+"hD" = (
+/obj/effect/decal/cleanable/blood/gibs/limb,
+/turf/open/floor/engine/cult,
+/area/ruin/powered)
+"hI" = (
+/obj/item/reagent_containers/food/drinks/beer,
+/turf/open/floor/plating/asteroid/basalt/wasteland,
+/area/lavaland/surface/outdoors)
+"jk" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/ruin/powered)
+"jP" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/lavaland/surface/outdoors)
+"kl" = (
+/obj/structure/sign/poster/official/nanotrasen_logo,
+/turf/closed/wall,
+/area/lavaland/surface/outdoors)
+"ks" = (
+/obj/structure/flora/rock/icy,
+/obj/effect/mob_spawn/human/corpse/assistant,
+/turf/open/floor/plating/rust,
+/area/lavaland/surface/outdoors)
+"la" = (
+/obj/effect/decal/cleanable/blood/gibs/up,
+/obj/effect/mob_spawn/human/corpse/assistant,
+/mob/living/simple_animal/hostile/skeleton/plasmaminer,
+/turf/open/floor/plating/asteroid/basalt/wasteland,
+/area/lavaland/surface/outdoors)
+"lg" = (
+/obj/effect/decal/remains/human,
+/turf/open/floor/plating/asteroid/basalt/wasteland,
+/area/lavaland/surface/outdoors)
+"li" = (
+/obj/structure/dresser,
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/wood,
+/area/ruin/powered)
+"lo" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood/footprints{
+	dir = 8
+	},
+/turf/open/floor/plating/asteroid/basalt/wasteland,
+/area/lavaland/surface/outdoors)
+"mi" = (
+/obj/effect/decal/remains/human,
+/mob/living/simple_animal/hostile/construct/armored/hostile{
+	health = 450;
+	maxHealth = 450;
+	name = "Right Hand of the Elder"
+	},
+/turf/open/floor/engine/cult,
+/area/ruin/powered)
+"oB" = (
+/obj/structure/table/wood,
+/obj/item/clothing/under/misc/pj/blue,
+/obj/item/clothing/shoes/sneakers/white,
+/obj/structure/bedsheetbin,
+/turf/open/floor/wood,
+/area/ruin/powered)
+"pH" = (
+/obj/structure/sign/poster/official/work_for_a_future,
+/turf/closed/wall/mineral/wood,
+/area/ruin/powered)
+"pP" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/chair/sofa/right{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/ruin/powered)
+"pV" = (
+/obj/machinery/door/airlock/maintenance_hatch,
+/turf/open/floor/plating,
+/area/ruin/powered)
+"rC" = (
+/obj/structure/closet/secure_closet/freezer,
+/obj/item/reagent_containers/food/snacks/carpmeat,
+/obj/item/reagent_containers/food/snacks/carpmeat,
+/obj/item/reagent_containers/food/snacks/carpmeat,
+/obj/item/reagent_containers/food/condiment/pack/ketchup,
+/obj/item/reagent_containers/food/condiment/pack/ketchup,
+/obj/item/reagent_containers/food/condiment/pack/ketchup,
+/turf/open/floor/plasteel/checker,
+/area/ruin/powered)
+"sG" = (
+/obj/effect/decal/cleanable/vomit,
+/obj/structure/toilet{
+	dir = 1
+	},
+/mob/living/simple_animal/hostile/skeleton/plasmaminer,
+/turf/open/floor/plating,
+/area/ruin/powered)
+"sY" = (
+/obj/structure/sink/kitchen{
+	dir = 4;
+	pixel_x = -12
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/checker,
+/area/ruin/powered)
+"tt" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/skeleton/plasmaminer,
+/turf/open/floor/plasteel/freezer,
+/area/ruin/powered)
+"tN" = (
+/turf/closed/mineral/volcanic/lava_land_surface,
+/area/lavaland/surface/outdoors)
+"tX" = (
+/obj/structure/table/wood,
+/obj/structure/bedsheetbin,
+/turf/open/floor/wood,
+/area/ruin/powered)
+"us" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/obj/effect/decal/cleanable/blood/footprints{
+	dir = 8
+	},
+/turf/open/floor/plating/asteroid/basalt/wasteland,
+/area/lavaland/surface/outdoors)
+"ut" = (
+/obj/item/flashlight/lantern{
+	on = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/ruin/powered)
+"wQ" = (
+/turf/closed/wall,
+/area/ruin/powered)
+"xN" = (
+/obj/structure/bed/dogbed{
+	pixel_y = 14
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/carpet,
+/area/ruin/powered)
+"yb" = (
+/obj/structure/chair/sofa/left{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/ruin/powered)
+"yS" = (
+/obj/effect/decal/cleanable/blood/drip,
+/turf/open/floor/plating/asteroid/basalt/wasteland,
+/area/lavaland/surface/outdoors)
+"zR" = (
+/obj/machinery/door/airlock/wood,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/ruin/powered)
+"AG" = (
+/obj/structure/showcase/machinery/tv,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/broken{
+	dir = 1
+	},
+/turf/open/floor/holofloor/wood,
+/area/ruin/powered)
+"AM" = (
+/obj/effect/decal/cleanable/blood/gibs/down,
+/obj/item/pickaxe,
+/turf/open/floor/engine/cult,
+/area/ruin/powered)
+"AN" = (
+/obj/structure/closet/cabinet,
+/obj/item/restraints/legcuffs/beartrap,
+/obj/item/restraints/legcuffs/beartrap,
+/obj/item/reagent_containers/glass/bottle/venom,
+/obj/item/reagent_containers/glass/bottle/curare,
+/obj/item/kitchen/knife/combat/survival,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/reagent_containers/food/snacks/meat/slab/human,
+/obj/item/reagent_containers/food/snacks/meat/slab/human,
+/obj/item/reagent_containers/food/snacks/meat/slab/human,
+/turf/open/floor/wood,
+/area/ruin/powered)
+"Cd" = (
+/obj/structure/chair/comfy/brown{
+	dir = 8
+	},
+/turf/open/floor/carpet,
+/area/ruin/powered)
+"Cl" = (
+/obj/structure/sacrificealtar,
+/obj/effect/decal/cleanable/blood/old,
+/obj/item/kitchen/knife/bloodletter,
+/turf/open/floor/engine/cult,
+/area/ruin/powered)
+"DI" = (
+/obj/structure/closet/emcloset,
+/obj/item/tank/internals/emergency_oxygen,
+/obj/item/tank/internals/emergency_oxygen,
+/obj/item/clothing/mask/breath/medical,
+/obj/item/clothing/mask/breath/medical,
+/obj/item/flashlight/lantern,
+/turf/open/floor/plasteel/freezer,
+/area/ruin/powered)
+"Ed" = (
+/obj/machinery/door/airlock/wood,
+/obj/effect/mapping_helpers/airlock/locked,
+/obj/structure/barricade/wooden/crude,
+/turf/open/floor/wood,
+/area/ruin/powered)
+"Ei" = (
+/turf/closed/mineral/strong/wasteland,
+/area/lavaland/surface/outdoors)
+"EF" = (
+/obj/effect/decal/cleanable/blood/gibs/torso,
+/obj/effect/decal/remains/human,
+/mob/living/simple_animal/hostile/construct/armored/hostile{
+	health = 450;
+	maxHealth = 450;
+	name = "Left Hand of the Elder"
+	},
+/turf/open/floor/engine/cult,
+/area/ruin/powered)
+"Gr" = (
+/obj/structure/closet/crate/trashcart,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/trash/chips,
+/obj/item/trash/semki{
+	pixel_x = 8;
+	pixel_y = -4
+	},
+/obj/item/clothing/neck/petcollar,
+/turf/open/floor/plasteel/freezer,
+/area/ruin/powered)
+"Gy" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/wood,
+/turf/open/floor/plating,
+/area/ruin/powered)
+"GK" = (
+/obj/item/clothing/head/bearpelt,
+/obj/structure/table/wood,
+/obj/item/reagent_containers/food/snacks/burger/fish,
+/obj/item/reagent_containers/food/drinks/beer{
+	pixel_x = -4
+	},
+/obj/item/reagent_containers/food/drinks/beer{
+	pixel_x = 10;
+	pixel_y = 6
+	},
+/turf/open/floor/wood,
+/area/ruin/powered)
+"Ha" = (
+/obj/structure/mirror{
+	broken = 1
+	},
+/turf/closed/wall/mineral/wood,
+/area/ruin/powered)
+"Hf" = (
+/obj/effect/decal/cleanable/blood/drip,
+/turf/open/floor/wood,
+/area/ruin/powered)
+"Hx" = (
+/obj/structure/closet/cabinet,
+/obj/item/clothing/under/rank/cargo/miner,
+/obj/item/clothing/suit/hooded/wintercoat/miner,
+/obj/item/clothing/shoes/winterboots,
+/obj/item/card/id/mining,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/ruin/powered)
+"IA" = (
+/obj/structure/fireplace{
+	fuel_added = 1000;
+	lit = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/carpet,
+/area/ruin/powered)
+"IT" = (
+/mob/living/simple_animal/hostile/skeleton/plasmaminer,
+/turf/open/floor/wood,
+/area/ruin/powered)
+"LZ" = (
+/obj/structure/bed,
+/obj/item/bedsheet/random,
+/turf/open/floor/wood,
+/area/ruin/powered)
+"Nq" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/rack,
+/obj/item/storage/bag/ore,
+/obj/item/storage/toolbox/mechanical,
+/turf/open/floor/plasteel/freezer,
+/area/ruin/powered)
+"Os" = (
+/obj/structure/chair/comfy/brown{
+	dir = 4
+	},
+/turf/open/floor/carpet,
+/area/ruin/powered)
+"Pp" = (
+/obj/machinery/vending/snack/random,
+/turf/open/floor/holofloor/wood,
+/area/ruin/powered)
+"PQ" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/mob/living/simple_animal/hostile/illusion{
+	deathmessage = "disperses into the air in a cloud of red mist, you feel slightly more at ease.";
+	desc = "You can't quite make out what you're seeing.";
+	faction = list("cult");
+	health = 500;
+	maxHealth = 500;
+	melee_damage_lower = 10;
+	melee_damage_upper = 30;
+	name = "Village Elder"
+	},
+/turf/open/floor/engine/cult,
+/area/ruin/powered)
+"Qh" = (
+/obj/structure/closet/crate/trashcart,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood,
+/obj/item/bodypart/head,
+/obj/item/bodypart/l_arm{
+	pixel_x = -9;
+	pixel_y = -9
+	},
+/obj/item/bodypart/l_leg,
+/obj/item/bodypart/r_arm,
+/obj/item/bodypart/r_leg{
+	pixel_x = 8;
+	pixel_y = 4
+	},
+/obj/item/bodypart/chest,
+/obj/item/organ/heart,
+/obj/item/multitool,
+/turf/open/floor/plasteel/freezer,
+/area/ruin/powered)
+"Qt" = (
+/obj/effect/decal/cleanable/blood/footprints{
+	dir = 1
+	},
+/obj/item/restraints/legcuffs/beartrap{
+	armed = 1
+	},
+/turf/open/floor/plating/asteroid/basalt/wasteland,
+/area/lavaland/surface/outdoors)
+"QR" = (
+/turf/closed/wall/rust,
+/area/ruin/powered)
+"Rv" = (
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/lavaland/surface/outdoors)
+"Si" = (
+/obj/structure/mirror,
+/turf/closed/wall/mineral/wood,
+/area/ruin/powered)
+"Sk" = (
+/obj/effect/decal/cleanable/blood/tracks,
+/obj/effect/decal/cleanable/blood/footprints{
+	dir = 1
+	},
+/turf/open/floor/plating/asteroid/basalt/wasteland,
+/area/lavaland/surface/outdoors)
+"SN" = (
+/turf/open/floor/plasteel/freezer,
+/area/ruin/powered)
+"SZ" = (
+/obj/machinery/door/airlock/wood,
+/turf/open/floor/wood,
+/area/ruin/powered)
+"UI" = (
+/obj/machinery/washing_machine,
+/obj/effect/decal/cleanable/blood,
+/obj/item/reagent_containers/food/snacks/meat/slab/corgi,
+/turf/open/floor/wood,
+/area/ruin/powered)
+"Vn" = (
+/turf/closed/wall/mineral/wood,
+/area/ruin/powered)
+"Ws" = (
+/turf/open/floor/plating/asteroid/basalt/wasteland,
+/area/lavaland/surface/outdoors)
+"WH" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/bed,
+/obj/item/bedsheet/cult,
+/turf/open/floor/wood,
+/area/ruin/powered)
+"Ze" = (
+/turf/closed/wall,
+/area/lavaland/surface/outdoors)
+"Zx" = (
+/obj/structure/chair/wood{
+	dir = 4
+	},
+/obj/effect/decal/remains/human,
+/turf/open/floor/plating/asteroid/basalt/wasteland,
+/area/lavaland/surface/outdoors)
+"ZG" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/closet/cabinet,
+/obj/item/clothing/suit/hooded/wintercoat,
+/obj/item/clothing/shoes/winterboots,
+/obj/item/clothing/under/suit/tan,
+/turf/open/floor/wood,
+/area/ruin/powered)
+
+(1,1,1) = {"
+tN
+tN
+tN
+tN
+tN
+tN
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+"}
+(2,1,1) = {"
+tN
+tN
+tN
+tN
+Rv
+Rv
+Rv
+bR
+Rv
+Rv
+Rv
+jP
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+tN
+tN
+tN
+tN
+tN
+"}
+(3,1,1) = {"
+tN
+tN
+tN
+Rv
+Rv
+Rv
+Rv
+aZ
+Rv
+tN
+Rv
+kl
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+tN
+tN
+tN
+"}
+(4,1,1) = {"
+tN
+tN
+tN
+Rv
+Rv
+Rv
+Ei
+Ze
+tN
+ks
+Ei
+Ze
+Ei
+Ei
+Ei
+Ei
+Ei
+Ei
+Ei
+Ei
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+tN
+tN
+"}
+(5,1,1) = {"
+tN
+tN
+Rv
+Rv
+Rv
+Rv
+Ei
+Ei
+Ei
+aa
+Ws
+Ei
+Ei
+Vn
+Vn
+Vn
+Ei
+Ei
+Ei
+Ei
+Ei
+Ei
+Ei
+Rv
+Rv
+Rv
+Rv
+Rv
+"}
+(6,1,1) = {"
+tN
+Rv
+Rv
+Rv
+Rv
+Ei
+Ei
+Ei
+Ws
+ac
+ac
+ac
+Ei
+Vn
+UI
+Vn
+Vn
+wQ
+wQ
+QR
+QR
+wQ
+Ei
+Ei
+Rv
+Rv
+Rv
+Rv
+"}
+(7,1,1) = {"
+tN
+Rv
+Rv
+Rv
+Ei
+Ei
+Vn
+Vn
+Vn
+Vn
+Ws
+ac
+Ws
+pH
+aM
+tX
+Vn
+QR
+DI
+SN
+Qh
+wQ
+Ei
+Ei
+Rv
+Rv
+Rv
+tN
+"}
+(8,1,1) = {"
+Rv
+Rv
+Rv
+Rv
+Ei
+Ei
+Vn
+cj
+sY
+Vn
+Ws
+ac
+Vn
+Vn
+aM
+oB
+Vn
+wQ
+DI
+tt
+Gr
+QR
+lg
+Ei
+Ei
+Rv
+Rv
+tN
+"}
+(9,1,1) = {"
+Rv
+Rv
+Rv
+Ei
+Ei
+la
+Vn
+rC
+ut
+Vn
+Ws
+ac
+Vn
+AG
+IT
+yb
+Vn
+wQ
+Nq
+SN
+QR
+QR
+Ws
+Ei
+Ei
+Rv
+Rv
+tN
+"}
+(10,1,1) = {"
+tN
+Rv
+Rv
+Ei
+Ei
+lo
+Ha
+li
+Hf
+SZ
+ac
+ac
+Vn
+Pp
+aM
+pP
+Vn
+wQ
+QR
+pV
+wQ
+Ws
+Ws
+Ei
+Ei
+Rv
+Rv
+tN
+"}
+(11,1,1) = {"
+tN
+Rv
+Rv
+Ei
+Ei
+lo
+Vn
+Hx
+fD
+Vn
+yS
+ac
+Vn
+Vn
+SZ
+Vn
+Vn
+Ws
+Ws
+ac
+Ws
+Ws
+Ws
+Ei
+Ei
+Rv
+Rv
+Rv
+"}
+(12,1,1) = {"
+tN
+Rv
+Rv
+Ei
+Ei
+lo
+Vn
+Vn
+Vn
+Vn
+Ws
+ac
+Ws
+Ws
+ac
+Ws
+Ws
+ac
+ac
+ac
+Ws
+Ws
+Ws
+Ei
+Ei
+Ei
+Rv
+Rv
+"}
+(13,1,1) = {"
+tN
+Rv
+Rv
+Ei
+Ei
+us
+Sk
+Qt
+yS
+Ws
+yS
+ac
+ac
+ac
+ac
+Ws
+Ws
+ac
+Ws
+Vn
+Vn
+Vn
+Vn
+Ei
+Ei
+Ei
+Rv
+Rv
+"}
+(14,1,1) = {"
+tN
+Rv
+Ei
+Ei
+Ei
+Ei
+Ws
+Ws
+Ws
+Ws
+Ws
+Ws
+Ws
+Ws
+ac
+Ws
+Ws
+ac
+Ws
+Vn
+LZ
+AN
+Vn
+Ei
+Ei
+Ei
+Rv
+Rv
+"}
+(15,1,1) = {"
+tN
+Rv
+Ei
+Vn
+Vn
+Vn
+Vn
+Vn
+Vn
+Vn
+Vn
+Ws
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+zR
+cB
+GK
+Vn
+Ei
+Ei
+Rv
+Rv
+Rv
+"}
+(16,1,1) = {"
+tN
+Rv
+Ei
+Vn
+EF
+hD
+Si
+aP
+WH
+ZG
+Vn
+Ws
+ac
+Ws
+Ws
+Ws
+Ws
+Ws
+Ws
+Vn
+Vn
+Vn
+Vn
+Ei
+Ei
+Rv
+Rv
+tN
+"}
+(17,1,1) = {"
+tN
+Rv
+Ei
+Vn
+Cl
+PQ
+Ed
+jk
+aM
+aM
+Vn
+Ws
+ac
+Ws
+Ws
+Ws
+Ws
+Ws
+Ws
+Ws
+Gy
+sG
+Vn
+Ei
+Ei
+Rv
+Rv
+tN
+"}
+(18,1,1) = {"
+tN
+Rv
+Ei
+Vn
+mi
+AM
+Vn
+ay
+Os
+jk
+dh
+ac
+ac
+Ws
+Ws
+Ws
+Ws
+Ws
+Ws
+Ws
+Vn
+Vn
+Vn
+Ei
+Ei
+Rv
+Rv
+tN
+"}
+(19,1,1) = {"
+tN
+Rv
+Ei
+Vn
+Vn
+Vn
+Vn
+IA
+gG
+aM
+Vn
+Ws
+Ws
+Ws
+Ws
+Ws
+Ws
+Ws
+Ws
+Ws
+Ws
+Ws
+Ws
+Ei
+Ei
+Rv
+Rv
+tN
+"}
+(20,1,1) = {"
+tN
+Rv
+Ei
+Ei
+Ei
+Ei
+Vn
+xN
+Cd
+jk
+Vn
+Ws
+Ws
+Ws
+Ws
+Ws
+Ws
+Ws
+Ws
+Ws
+Ws
+Ws
+Ws
+Ei
+Ei
+Rv
+Rv
+tN
+"}
+(21,1,1) = {"
+tN
+Rv
+Rv
+Rv
+Ei
+Ei
+Vn
+Vn
+Vn
+Vn
+Vn
+Ws
+Ws
+Ws
+Ws
+Ws
+Ws
+Ws
+Ws
+Ws
+Ws
+Ws
+Ei
+Ei
+Ei
+Rv
+Rv
+tN
+"}
+(22,1,1) = {"
+tN
+Rv
+Rv
+Rv
+Ei
+Ei
+Ei
+Ei
+Ws
+Ws
+Ws
+Ws
+Ws
+Ws
+hI
+Zx
+Ws
+Ws
+Ws
+Ws
+Ws
+Ei
+Ei
+Ei
+Rv
+Rv
+Rv
+tN
+"}
+(23,1,1) = {"
+tN
+tN
+Rv
+Rv
+Rv
+Ei
+Ei
+Ei
+Ei
+Ws
+Ws
+Ws
+Ws
+Ws
+Ws
+Ws
+Ws
+Ws
+Ws
+Ei
+Ei
+Ei
+Ei
+Rv
+Rv
+Rv
+Rv
+tN
+"}
+(24,1,1) = {"
+tN
+tN
+tN
+Rv
+Rv
+Rv
+Rv
+Ei
+Ei
+Ei
+Ei
+Ei
+Ei
+Ws
+Ws
+Ws
+Ws
+Ws
+Ei
+Ei
+Ei
+Ei
+Rv
+Rv
+Rv
+Rv
+Rv
+tN
+"}
+(25,1,1) = {"
+tN
+tN
+tN
+Rv
+Rv
+Rv
+Rv
+Ei
+Ei
+Ei
+Ei
+Ei
+Ei
+Ei
+Ei
+Ei
+Ei
+Ei
+Ei
+Ei
+Ei
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+tN
+"}
+(26,1,1) = {"
+tN
+tN
+tN
+Rv
+Rv
+Rv
+Rv
+Rv
+Ei
+Ei
+Ei
+Ei
+Ei
+Ei
+Ei
+Ei
+Ei
+Ei
+Ei
+Rv
+Rv
+Rv
+Rv
+Rv
+tN
+Rv
+Rv
+tN
+"}
+(27,1,1) = {"
+tN
+tN
+tN
+tN
+tN
+tN
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+tN
+tN
+Rv
+Rv
+tN
+"}
+(28,1,1) = {"
+tN
+tN
+tN
+tN
+tN
+tN
+Rv
+Rv
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+Rv
+Rv
+tN
+tN
+tN
+tN
+Rv
+Rv
+tN
+"}
