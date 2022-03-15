@@ -1,5 +1,5 @@
 ## HuggleStation
-Based and maintained from TgStation.
+Based and maintained from Citadel Station.
 Based off of PampieStations content.
 
 
