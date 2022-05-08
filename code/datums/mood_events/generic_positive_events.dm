@@ -60,6 +60,12 @@
 	mood_change = 12
 	hidden = TRUE
 
+/datum/mood_event/creeping
+	description = "<span class='greentext'>The voices are satisfied I'm close to my obsession. I feel free again!</span>\n" //creeps get it when they are around their obsession
+	mood_change = 18
+	timeout = 30
+	hidden = TRUE
+
 /datum/mood_event/revolution
 	description = "<span class='nicegreen'>VIVA LA REVOLUTION!</span>\n"
 	mood_change = 3

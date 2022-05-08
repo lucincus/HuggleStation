@@ -739,3 +739,7 @@
 	path = /obj/item/clothing/under/rank/cargo/tech/long
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_JOBS
 	restricted_roles = list("Cargo Technician")
+
+/datum/gear/uniform/iswm
+	name = "ISWM replica jumpsuit"
+	path = /obj/item/clothing/under/costume/iswm

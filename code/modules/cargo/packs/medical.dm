@@ -275,3 +275,29 @@
 					/obj/item/paci_package/nuk)
 
 	crate_name = "diaper crate"
+
+//kegs
+/datum/supply_pack/medical/diuretic_keg
+	name = "Bulk Diuretic Order"
+	desc = "A keg containing 250u of Space Diuretics."
+	cost = 400 //these are really easy to make on-station.
+	contains = list(/obj/structure/reagent_dispensers/keg/diuretic)
+	crate_name = "diuretic crate"
+	crate_type = /obj/structure/closet/crate/large
+
+/datum/supply_pack/medical/laxative_keg
+	name = "Bulk Laxatives Order"
+	desc = "A keg containing 250u of Space Laxatives."
+	cost = 800
+	contains = list(/obj/structure/reagent_dispensers/keg/laxative)
+	crate_name = "laxative crate"
+	crate_type = /obj/structure/closet/crate/large
+
+/datum/supply_pack/medical/regression_keg
+	name = "Regressium Keg"
+	desc = "A keg containing 250u of Regression Serum."
+	cost = 800
+	contains = list(/obj/structure/reagent_dispensers/keg/regression)
+	crate_name = "Regressium crate"
+	crate_type = /obj/structure/closet/crate/large
+	hidden = TRUE

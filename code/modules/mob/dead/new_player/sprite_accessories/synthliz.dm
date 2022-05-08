@@ -20,6 +20,13 @@
 	icon_state = "synthliz_tert"
 	matrixed_sections = MATRIX_RED_BLUE
 
+/datum/sprite_accessory/snouts/mam_snouts/synthliz/protogen
+	icon = 'modular_citadel/icons/mob/synthliz_snouts.dmi'
+	color_src = MATRIXED
+	name = "Protogen"
+	icon_state = "protogen"
+	matrixed_sections = MATRIX_RED_BLUE
+
 /datum/sprite_accessory/snouts/mam_snouts/synthliz/synthliz_tertunder
 	icon = 'modular_citadel/icons/mob/synthliz_snouts.dmi'
 	color_src = MATRIXED

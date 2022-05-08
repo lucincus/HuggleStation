@@ -493,6 +493,78 @@
 	M.adjust_bodytemperature(-5 * TEMPERATURE_DAMAGE_COEFFICIENT, BODYTEMP_NORMAL)
 	..()
 
+/datum/reagent/consumable/pspspsi
+	name = "Pspspsi"
+	description = "Here kitty!"
+	nutriment_factor = 0.5 * REAGENTS_METABOLISM
+	color = "#472b0f" // rgb: 16, 8, 0
+	taste_description = "meow"
+	glass_name = "glass of Pspsipsi"
+	glass_desc = "A glass of refreshing Pspspsi. Meow!"
+
+/datum/reagent/consumable/pspspsi/on_mob_life(mob/living/carbon/M)
+	M.drowsyness = max(0,M.drowsyness-5)
+	M.adjust_bodytemperature(-5 * TEMPERATURE_DAMAGE_COEFFICIENT, BODYTEMP_NORMAL)
+	..()
+
+/datum/reagent/consumable/drpup
+	name = "Dr.Pupper"
+	description = "Wuff!"
+	nutriment_factor = 0.5 * REAGENTS_METABOLISM
+	color = "#4e2b07" // rgb: 16, 8, 0
+	taste_description = "woof"
+	glass_name = "glass of Dr.Pupper"
+	glass_desc = "A glass of refreshing Dr.Pupper. Awoo!"
+
+/datum/reagent/consumable/drpup/on_mob_life(mob/living/carbon/M)
+	M.drowsyness = max(0,M.drowsyness-5)
+	M.adjust_bodytemperature(-5 * TEMPERATURE_DAMAGE_COEFFICIENT, BODYTEMP_NORMAL)
+	..()
+
+/datum/reagent/consumable/sunp
+	name = "Sunny P"
+	description = "The sweetest diuretic in space!"
+	nutriment_factor = 0.5 * REAGENTS_METABOLISM
+	color = "#e4903c" // rgb: 16, 8, 0
+	taste_description = "orange"
+	glass_name = "glass of Sunny P"
+	glass_desc = "A glass of defreshing Sunny P."
+
+/datum/reagent/consumable/sunp/on_mob_life(mob/living/carbon/M)
+	metabolization_rate = 1.5 * REAGENTS_METABOLISM
+	if(M.client.prefs.accident_types != "Poop Only" && src.volume >= 1)
+		M.pee += 0.25 * src.volume
+	..()
+
+/datum/reagent/consumable/mtndo
+	name = "Mountain Doo"
+	description = "The sweetest laxative in space!"
+	nutriment_factor = 0.5 * REAGENTS_METABOLISM
+	color = "#4ce22e" // rgb: 16, 8, 0
+	taste_description = "lime"
+	glass_name = "glass of Mountain Doo"
+	glass_desc = "A glass of defreshing Mountain Doo. Uh oh..."
+
+/datum/reagent/consumable/mtndo/on_mob_life(mob/living/carbon/M)
+	metabolization_rate = 1.5 * REAGENTS_METABOLISM
+	if(M.client.prefs.accident_types != "Pee Only" && src.volume >= 1)
+		M.poop += 0.25 * src.volume
+	..()
+
+/datum/reagent/consumable/pinkcan
+	name = "Pink Drink"
+	description = "It's pink! that's about it"
+	nutriment_factor = 0.5 * REAGENTS_METABOLISM
+	color = "#db64b3" // rgb: 16, 8, 0
+	taste_description = "pink"
+	glass_name = "glass of Pink"
+	glass_desc = "A glass of well... Pink."
+
+/datum/reagent/consumable/pinkcan/on_mob_life(mob/living/carbon/M)
+	M.drowsyness = max(0,M.drowsyness-5)
+	M.adjust_bodytemperature(-5 * TEMPERATURE_DAMAGE_COEFFICIENT, BODYTEMP_NORMAL)
+	..()
+
 /datum/reagent/consumable/nuka_cola
 	name = "Nuka Cola"
 	description = "Cola, cola never changes."

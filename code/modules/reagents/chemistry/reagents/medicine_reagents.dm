@@ -1030,6 +1030,7 @@
 	name = "Mannitol"
 	description = "Efficiently restores brain damage."
 	color = "#DCDCFF"
+	taste_description = "sweetness"
 	pH = 10.4
 
 /datum/reagent/medicine/mannitol/on_mob_life(mob/living/carbon/C)

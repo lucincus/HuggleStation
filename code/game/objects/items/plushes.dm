@@ -487,6 +487,12 @@ GLOBAL_LIST_INIT(valid_plushie_paths, valid_plushie_paths())
 	attack_verb = list("bitten", "eaten", "fin slapped")
 	squeak_override = list('sound/weapons/bite.ogg'=1)
 
+/obj/item/toy/plush/carpplushie/Initialize(mapload)
+	. = ..()
+	if(prob(5))
+		icon_state = "scarpplush"
+		item_state = "scarpplush"
+
 /obj/item/toy/plush/bubbleplush
 	name = "bubblegum plushie"
 	desc = "The friendly red demon that gives good miners gifts."
@@ -661,7 +667,12 @@ GLOBAL_LIST_INIT(valid_plushie_paths, valid_plushie_paths())
 	icon_state = "moff"
 	item_state = "moff"
 	squeak_override = list('modular_citadel/sound/voice/mothsqueak.ogg' = 1)
-	can_random_spawn = FALSE
+
+/obj/item/toy/plush/mothplushie/Initialize(mapload)
+	. = ..()
+	if(prob(5))
+		icon_state = "smoff"
+		item_state = "smoff"
 
 /obj/item/toy/plush/lampplushie
 	name = "lamp plushie"
@@ -857,6 +868,101 @@ GLOBAL_LIST_INIT(valid_plushie_paths, valid_plushie_paths())
 	icon_state = "succubun"
 	item_state = "succubun"
 	attack_verb = list("newspapered", "bapped", "booped")
+
+
+/obj/item/toy/plush/pika
+	name = "Oddly specific electric mouse plushie"
+	desc = "A plush toy of a famous electric mouse."
+	icon_state = "pika"
+	item_state = "pika"
+	attack_verb = list("sparked", "zapped", "shocked", "bolted")
+
+/obj/item/toy/plush/vapo
+	name = "Oddly specific fishdog plushie"
+	desc = "A plush of a well known fishdog. Hey guys, did you know in terms of..."
+	icon_state = "vapo"
+	item_state = "vapo"
+	attack_verb = list("splashed", "squirted", "splooshed")
+
+/obj/item/toy/plush/latia
+	name = "Oddly specific red dragon plushie"
+	desc = "An oddly specific red dragon plush, rarely seen without its blue twin."
+	icon_state = "latia"
+	item_state = "latia"
+	attack_verb = list("bapped", "booped")
+
+/obj/item/toy/plush/latio
+	name = "Oddly specific blue dragon plushie"
+	desc = "An oddly specific blue dragon plush, rarely seen without its red twin."
+	icon_state = "latio"
+	item_state = "latio"
+	attack_verb = list("bapped", "booped")
+
+/obj/item/toy/plush/vee
+	name = "Oddly specific vulpine plushie"
+	desc = "A plush of a famous fox who is said to be extremely versatile."
+	icon_state = "vee"
+	item_state = "vee"
+	attack_verb = list("bapped", "booped")
+
+/obj/item/toy/plush/punny
+	name = "Oddly specific bunny plushie"
+	desc = "A plush of a well known (for all the wrong reasons) bunny."
+	icon_state = "punny"
+	item_state = "punny"
+	attack_verb = list("kicked", "punched")
+
+/obj/item/toy/plush/raha
+	name = "All-Rounder catboy plush"
+	desc = "T'is good to be awake."
+	icon_state = "raha"
+	item_state = "raha"
+	attack_verb = list("broke", "bapped", "summoned")
+
+/obj/item/toy/plush/raha/Initialize(mapload)
+	. = ..()
+	if(prob(5))
+		icon_state = "sraha"
+		item_state = "sraha"
+
+/obj/item/toy/plush/carby
+	name = "Carbuncle"
+	desc = "Prr."
+	icon_state = "base_carby"
+	item_state = "base_carby"
+	attack_verb = list("gemmed", "prr'd", "trilled")
+	slot_flags = ITEM_SLOT_BELT
+	var/on = FALSE
+	var/brightness_on = 3 //range of light when on
+	var/flashlight_power = 0.75 //strength of the light when on
+	light_color = "#f7afc4"
+
+/obj/item/toy/plush/carby/Initialize(mapload, param_color)
+	. = ..()
+
+	update_brightness()
+	if(!param_color)
+		param_color = pick("emerald","topaz","ruby","sapphire","diamond","obsidian","amethyst","sunstone")
+	icon_state = "[param_color]_carby"
+	item_state = "[param_color]_carby"
+
+/obj/item/toy/plush/carby/proc/update_brightness(mob/user = null)
+	if(on)
+		if(flashlight_power)
+			set_light(l_range = brightness_on, l_power = flashlight_power)
+		else
+			set_light(brightness_on)
+	else
+		set_light(0)
+
+/obj/item/toy/plush/carby/attack_self(mob/user)
+	on = !on
+	update_brightness(user)
+	playsound(src, on ? 'sound/weapons/magin.ogg' : 'sound/weapons/magout.ogg', 40, TRUE)
+
+/obj/item/toy/plush/carby/DoRevenantThrowEffects(atom/target)
+	attack_self()
+
 
 /obj/item/toy/plush/hairball
 	name = "Hairball"

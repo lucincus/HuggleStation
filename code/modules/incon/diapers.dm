@@ -103,6 +103,24 @@
 				M.heftersbonus = 0
 			Del()
 
+/obj/item/diaper/attack(mob/living/silicon/robot/M as mob, mob/usr as mob)
+	if(M == usr && HAS_TRAIT(M,TRAIT_NOCHANGESELF))
+		to_chat(usr, "<span class='warning'>You don't know how to change yourself!</span>")
+	else if(M.client.prefs.accident_types != "Opt Out" || M.client == null)
+		playsound(M.loc,'sound/effects/Diapertape.wav',50,1)
+		if(do_after_mob(usr,M))
+			M.DiaperChange(src)
+			M.brand2 = name
+			M.DiaperAppearance()
+			if (findtext(M.brand, "hefters") != 0 || findtext(M.brand, "_thick") != 0)
+				M.heftersbonus = 100
+			else if (findtext(M.brand, "trainer") != 0 || findtext(M.brand, "_trainer") != 0)
+				M.heftersbonus = -80
+			else if (findtext(M.brand, "underwear") != 0 || findtext(M.brand, "_underwear") != 0)
+				M.heftersbonus = -140
+			else
+				M.heftersbonus = 0
+			Del()
 /obj/item/wetdiap/plain
 	icon_state = "plain_wet"
 
@@ -853,17 +871,29 @@
 
 /obj/item/diaper/cloth
 	name = "\improper Cloth diaper"
-	desc = "Held in place with safety pins. Washable but not recommended."
+	desc = "Held in place with safety pins. Washable!"
 	icon_state = "cloth"
 
 /obj/item/wetdiap/cloth
 	icon_state = "cloth_wet"
 
+/obj/item/wetdiap/cloth/machine_wash(obj/machinery/washing_machine/WM)
+	new /obj/item/diaper/cloth(loc)
+	qdel(src)
+
 /obj/item/poopydiap/cloth
 	icon_state = "cloth_messy"
 
+/obj/item/poopydiap/cloth/machine_wash(obj/machinery/washing_machine/WM)
+	new /obj/item/diaper/cloth(loc)
+	qdel(src)
+
 /obj/item/useddiap/cloth
 	icon_state = "cloth_messy"
+
+/obj/item/useddiap/cloth/machine_wash(obj/machinery/washing_machine/WM)
+	new /obj/item/diaper/cloth(loc)
+	qdel(src)
 
 ///TESTING HYPER STUFF HERE!!!!!!
 
@@ -902,6 +932,18 @@
 	name = "pottypants"
 	desc = "Whoever had this on obviously wasn't ready for it."
 	icon_state = "cloth_messy"
+
+/obj/item/wetdiap/underwear/machine_wash(obj/machinery/washing_machine/WM)
+	new /obj/item/diaper/underwear(loc)
+	qdel(src)
+
+/obj/item/poopydiap/underwear/machine_wash(obj/machinery/washing_machine/WM)
+	new /obj/item/diaper/underwear(loc)
+	qdel(src)
+
+/obj/item/useddiap/underwear/machine_wash(obj/machinery/washing_machine/WM)
+	new /obj/item/diaper/underwear(loc)
+	qdel(src)
 
 /obj/item/diaper/blue_trainer
 	name = "\improper Training Pants (Blue)"

@@ -308,3 +308,22 @@
 	icon_state = "bluekeg"
 	reagent_id = /datum/reagent/consumable/ethanol/neurotoxin
 	tank_volume = 100 //2.5x less than the other kegs because it's harder to get
+
+//kinky PampieStation kegs
+/obj/structure/reagent_dispensers/keg/diuretic
+	name = "keg of diuretics"
+	desc = "A keg of space diuretics."
+	reagent_id = /datum/reagent/medicine/diuretic
+	tank_volume = 250
+
+/obj/structure/reagent_dispensers/keg/laxative
+	name = "keg of Space Laxatives"
+	desc = "A keg full of liquid Space Lax."
+	reagent_id = /datum/reagent/medicine/laxative
+	tank_volume = 250
+
+/obj/structure/reagent_dispensers/keg/regression
+	name = "keg of Regressium"
+	desc = "A keg full of Regression Serum."
+	reagent_id = /datum/reagent/medicine/regression
+	tank_volume = 250

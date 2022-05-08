@@ -7,4 +7,3 @@
 Sulta = Host
  = Game Master
  = Game Admin
- = Coder

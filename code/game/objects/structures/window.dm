@@ -90,13 +90,13 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	. = ..()
 	if(direct)
 		setDir(direct)
-	
+
 	if(extra_reinforced && anchored)
 		state = PRWINDOW_SECURE
 
 	else if(reinf && anchored)
 		state = WINDOW_SCREWED_TO_FRAME
-	
+
 
 	if(mapload && electrochromatic_id && electrochromatic_id[1] == "!")
 		electrochromatic_id = SSmapping.get_obfuscated_id(electrochromatic_id)
@@ -719,7 +719,6 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	icon = 'icons/obj/smooth_structures/rplasma_window.dmi'
 	icon_state = "rplasmawindow"
 	dir = FULLTILE_WINDOW_DIR
-	state = PRWINDOW_SECURE
 	max_integrity = 1000
 	fulltile = TRUE
 	flags_1 = PREVENT_CLICK_UNDER_1

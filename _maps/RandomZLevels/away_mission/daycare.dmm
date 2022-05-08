@@ -1,0 +1,323 @@
+"ae" = (/obj/machinery/light,/obj/structure/table,/turf/open/floor/plasteel/cafeteria,/area/awaymission/daycare)
+"ai" = (/obj/structure/chair/comfy/black{dir = 1},/turf/open/floor/carpet,/area/awaymission/daycare)
+"aH" = (/obj/structure/toilet{dir = 8},/turf/open/floor/mineral/titanium/blue,/area/awaymission/daycare)
+"aY" = (/obj/machinery/door/airlock/wood,/obj/effect/decal/cleanable/blood/drip,/turf/open/floor/wood,/area/awaymission/daycare)
+"bb" = (/obj/structure/cable{icon_state = "1-8"},/obj/effect/turf_decal/stripes/line,/turf/open/floor/plasteel,/area/awaymission/daycare)
+"bi" = (/obj/structure/bookcase/random/reference,/obj/machinery/light{dir = 1},/turf/open/floor/wood,/area/awaymission/daycare)
+"bq" = (/obj/structure/reagent_dispensers/keg/laxative,/turf/open/floor/wood,/area/awaymission/daycare)
+"bt" = (/obj/machinery/button/door{name = "privacy shutters"; pixel_x = 4; pixel_y = 25; tag = "luxuryPrivacy"},/obj/structure/closet/crate/bin,/turf/open/floor/wood,/area/awaymission/daycare)
+"bK" = (/obj/structure/dresser,/turf/open/floor/wood,/area/awaymission/daycare)
+"bO" = (/obj/structure/fence{dir = 4},/turf/open/floor/grass,/area/awaymission/daycare)
+"bQ" = (/obj/structure/reagent_dispensers/keg/diuretic,/turf/open/floor/wood,/area/awaymission/daycare)
+"cb" = (/obj/structure/closet/secure_closet/personal/cabinet,/obj/item/toy/plush/random,/turf/open/floor/wood,/area/awaymission/daycare)
+"cL" = (/obj/machinery/button{name = "Smoke Door"; pixel_x = -25; pixel_y = 7; tag = smokeDoor},/turf/open/floor/wood,/area/awaymission/daycare)
+"cO" = (/turf/open/floor/wood{icon_state = "wood-broken4"},/area/awaymission/daycare)
+"cW" = (/obj/item/bedsheet/blue{dir = 1},/obj/machinery/button/door{normaldoorcontrol = 1; pixel_x = -26; pixel_y = 25; specialfunctions = 4; tag = "dcCabin2"},/obj/machinery/button/door{name = "privacy shutters"; pixel_x = -26; pixel_y = 34; tag = "dcPrivacy2"},/turf/open/floor/wood,/area/awaymission/daycare)
+"cY" = (/obj/machinery/door/airlock/wood/glass{name = "Holding Cell"; req_access_txt = "45"},/turf/open/floor/wood,/area/awaymission/daycare)
+"dr" = (/obj/effect/spawner/structure/window,/turf/open/floor/wood,/area/awaymission/daycare)
+"ds" = (/obj/structure/closet/secure_closet/personal/cabinet,/turf/open/floor/wood,/area/awaymission/daycare)
+"dw" = (/obj/structure/chair/office{dir = 1},/turf/open/floor/wood,/area/awaymission/daycare)
+"dA" = (/turf/open/floor/padded,/area/awaymission/daycare)
+"dR" = (/obj/machinery/door/airlock/wood/glass{name = "New-U Facility"},/obj/effect/decal/cleanable/blood/drip,/turf/open/floor/wood,/area/awaymission/daycare)
+"dX" = (/obj/machinery/light{dir = 4},/obj/structure/table,/obj/item/kitchen/knife,/turf/open/floor/plasteel/cafeteria,/area/awaymission/daycare)
+"eb" = (/turf/open/floor/plasteel,/area/awaymission/daycare)
+"eG" = (/obj/structure/table,/obj/item/clipboard{pixel_x = 5; pixel_y = -2},/obj/item/paper_bin{pixel_x = -7; pixel_y = 7},/obj/item/pen,/turf/open/floor/plasteel/white/corner{dir = 4},/area/awaymission/daycare)
+"eT" = (/turf/open/floor/plating/dirt/jungle,/area/awaymission/daycare)
+"fe" = (/obj/structure/table/wood,/obj/item/storage/wallet/random,/obj/item/flashlight/lamp/green{pixel_x = -5; pixel_y = 8},/obj/item/paper/fluff/awaymissions/daycare/ohno,/turf/open/floor/wood,/area/awaymission/daycare)
+"fs" = (/obj/structure/bed,/obj/item/toy/plush/catboy,/obj/item/bedsheet/purple,/turf/open/floor/wood,/area/awaymission/daycare)
+"gq" = (/obj/machinery/door/airlock/wood{name = "Storage"; req_access_txt = "45"},/turf/open/floor/wood,/area/awaymission/daycare)
+"gB" = (/obj/machinery/door/airlock/wood{name = "Nap Room"},/turf/open/floor/wood,/area/awaymission/daycare)
+"gO" = (/obj/structure/sink{dir = 8; pixel_x = -12; pixel_y = 2},/turf/open/floor/plasteel/white/side{dir = 4},/area/awaymission/daycare)
+"gP" = (/obj/structure/table,/turf/open/floor/plasteel/cafeteria,/area/awaymission/daycare)
+"gT" = (/obj/machinery/computer/med_data{dir = 8},/turf/open/floor/plasteel/white/corner{dir = 1},/area/awaymission/daycare)
+"gZ" = (/obj/structure/table/optable,/turf/open/floor/plasteel/white/corner{dir = 8},/area/awaymission/daycare)
+"hn" = (/obj/structure/toilet{contents = newlist(/obj/item/toy/snappop/phoenix); dir = 4},/obj/structure/sink{pixel_y = 22},/turf/open/floor/wood,/area/awaymission/daycare)
+"hF" = (/obj/structure/table,/obj/item/reagent_containers/glass/beaker/bluespace{pixel_x = -5; pixel_y = 5},/obj/item/reagent_containers/glass/beaker/bluespace,/obj/machinery/light/small{dir = 1},/turf/open/floor/wood{icon_state = "wood-broken6"},/area/awaymission/daycare)
+"id" = (/obj/structure/sink{dir = 8; pixel_x = -12; pixel_y = 2},/turf/open/floor/mineral/titanium/blue,/area/awaymission/daycare)
+"ie" = (/obj/structure/reagent_dispensers/keg/laxative,/obj/machinery/light/small,/turf/open/floor/wood,/area/awaymission/daycare)
+"iv" = (/obj/structure/fence/door/opened{dir = 4},/turf/open/floor/plating/dirt/daycare,/area/awaymission/daycare)
+"iA" = (/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/awaymission/daycare)
+"iE" = (/obj/structure/bed/crib,/obj/item/toy/plush/teddybear,/turf/open/floor/wood,/area/awaymission/daycare)
+"jm" = (/obj/machinery/smoke_machine,/obj/machinery/door/window{req_access_txt = "45"},/turf/open/floor/plating,/area/awaymission/daycare)
+"jo" = (/turf/open/floor/carpet/arcade,/area/awaymission/daycare)
+"jy" = (/obj/machinery/light{dir = 4},/turf/open/floor/grass/fairy/green,/area/awaymission/daycare)
+"jY" = (/obj/structure/reagent_dispensers/keg/regression,/turf/open/floor/wood,/area/awaymission/daycare)
+"kd" = (/obj/machinery/light_switch{pixel_x = -26; pixel_y = 26},/turf/open/floor/wood,/area/awaymission/daycare)
+"kp" = (/obj/structure/fence/cut/medium,/turf/open/floor/grass,/area/awaymission/daycare)
+"kq" = (/obj/machinery/hypnochair,/turf/open/floor/wood,/area/awaymission/daycare)
+"ks" = (/turf/open/floor/mineral/titanium/blue,/area/awaymission/daycare)
+"kJ" = (/obj/item/stack/marker_beacon{anchored = 1; icon_state = "markerburgundy-on"; light_color = "#FA644B"; light_power = 3; light_range = 2; name = "landing marker"; picked_color = "Burgundy"},/turf/open/floor/plating/dirt/daycare,/area/awaymission/daycare)
+"kL" = (/turf/open/floor/grass/fairy/yellow,/area/awaymission/daycare)
+"lz" = (/obj/structure/table,/obj/item/clothing/gloves/color/latex,/obj/item/clothing/suit/apron/surgical,/turf/open/floor/plasteel/white/side{dir = 1},/area/awaymission/daycare)
+"lF" = (/obj/effect/landmark/awaystart,/turf/open/floor/plasteel,/area/awaymission/daycare)
+"lZ" = (/obj/machinery/door/airlock/wood{name = "Re-education"; req_access_txt = "45"},/obj/effect/decal/cleanable/blood/old,/turf/open/floor/wood,/area/awaymission/daycare)
+"mx" = (/turf/open/floor/plasteel/freezer,/area/awaymission/daycare)
+"my" = (/obj/structure/chair/comfy/black,/turf/open/floor/carpet,/area/awaymission/daycare)
+"mO" = (/obj/structure/chair/office/light{dir = 8},/turf/open/floor/plasteel/white/side{dir = 1},/area/awaymission/daycare)
+"nf" = (/obj/machinery/shower{dir = 1},/obj/structure/curtain,/turf/open/floor/wood,/area/awaymission/daycare)
+"nn" = (/turf/open/water/daycare,/area/awaymission/daycare)
+"nA" = (/obj/structure/closet/secure_closet/medical2,/turf/open/floor/plasteel/white/corner,/area/awaymission/daycare)
+"nJ" = (/obj/machinery/gateway/away,/turf/open/floor/plasteel,/area/awaymission/daycare)
+"nK" = (/obj/effect/decal/cleanable/blood/tracks{dir = 8},/turf/open/floor/grass,/area/awaymission/daycare)
+"nO" = (/obj/structure/table/wood,/turf/open/floor/wood,/area/awaymission/daycare)
+"nX" = (/obj/structure/table/wood,/obj/item/paper_bin{pixel_x = 6; pixel_y = 2},/obj/item/pen,/turf/open/floor/wood,/area/awaymission/daycare)
+"oe" = (/obj/structure/bed/crib{dir = 1},/obj/item/toy/plush/redtail,/turf/open/floor/wood,/area/awaymission/daycare)
+"oy" = (/obj/structure/bed/crib{dir = 1},/obj/item/toy/plush/pika,/turf/open/floor/wood,/area/awaymission/daycare)
+"oB" = (/obj/machinery/light/small{dir = 1},/turf/open/floor/wood,/area/awaymission/daycare)
+"oJ" = (/obj/machinery/door/airlock/wood{id_tag = "daycareToilet"; name = "Stall"; req_access_txt = "72"},/turf/open/floor/plasteel/freezer,/area/awaymission/daycare)
+"oP" = (/obj/structure/bed/double{dir = 1},/obj/item/bedsheet/green/double{dir = 1},/turf/open/floor/wood,/area/awaymission/daycare)
+"ph" = (/turf/open/floor/grass/fairy,/area/awaymission/daycare)
+"pp" = (/obj/structure/sink{dir = 8; pixel_x = -12; pixel_y = 2},/obj/structure/mirror{pixel_x = -28},/turf/open/floor/plasteel/freezer,/area/awaymission/daycare)
+"ps" = (/obj/machinery/door/airlock/wood/glass{name = "Daycare Area"},/turf/open/floor/wood,/area/awaymission/daycare)
+"pu" = (/obj/structure/curtain,/turf/open/floor/mineral/titanium/blue,/area/awaymission/daycare)
+"pz" = (/turf/open/floor/wood{icon_state = "wood-broken"},/area/awaymission/daycare)
+"qi" = (/obj/machinery/door/airlock/wood{name = "Bathroom"},/turf/open/floor/plasteel/freezer,/area/awaymission/daycare)
+"qn" = (/obj/structure/closet/secure_closet/personal/patient,/turf/open/floor/plasteel/white/corner,/area/awaymission/daycare)
+"qx" = (/obj/structure/chair/highchairwood,/turf/open/floor/wood,/area/awaymission/daycare)
+"qL" = (/obj/structure/closet/crate/bin,/turf/open/floor/plasteel/cafeteria,/area/awaymission/daycare)
+"rk" = (/obj/structure/closet/crate/grave{desc = "An marked patch of soil,  belonging to someone named Jamie. You wouldn't disturb a grave... right?"},/turf/open/floor/grass,/area/awaymission/daycare)
+"rK" = (/obj/structure/table/wood,/turf/open/floor/carpet/arcade,/area/awaymission/daycare)
+"rU" = (/turf/open/floor/plasteel/white/side{dir = 4},/area/awaymission/daycare)
+"sg" = (/turf/open/floor/wood{icon_state = "wood-broken6"},/area/awaymission/daycare)
+"su" = (/obj/machinery/button/door{normaldoorcontrol = 1; pixel_x = -26; pixel_y = 25; specialfunctions = 4; tag = "dcCabin1"},/obj/machinery/button/door{name = "privacy shutters"; pixel_x = -26; pixel_y = 34; tag = "dcPrivacy1"},/turf/open/floor/wood,/area/awaymission/daycare)
+"sI" = (/obj/structure/sign/departments/restroom{pixel_x = 32; pixel_y = 32},/turf/open/floor/plasteel/freezer,/area/awaymission/daycare)
+"ty" = (/obj/machinery/button/door{normaldoorcontrol = 1; pixel_x = 26; pixel_y = 25; specialfunctions = 4; tag = "daycareLuxury"},/turf/open/floor/wood,/area/awaymission/daycare)
+"ui" = (/turf/open/floor/carpet/green,/area/awaymission/daycare)
+"uS" = (/obj/effect/decal/cleanable/blood/tracks,/turf/open/floor/grass,/area/awaymission/daycare)
+"vt" = (/obj/machinery/door/airlock/wood{name = "Kitchen"},/turf/open/floor/plasteel/cafeteria,/area/awaymission/daycare)
+"wc" = (/obj/structure/bed/crib,/obj/item/toy/plush/raha,/turf/open/floor/wood,/area/awaymission/daycare)
+"wq" = (/obj/structure/toilet{dir = 8},/obj/machinery/light/small{dir = 4},/obj/machinery/button/door{normaldoorcontrol = 1; pixel_x = -6; pixel_y = 25; specialfunctions = 4; tag = "daycareToilet"},/turf/open/floor/plasteel/freezer,/area/awaymission/daycare)
+"wD" = (/obj/structure/bed{dir = 1},/obj/effect/decal/cleanable/blood/old,/turf/open/floor/wood,/area/awaymission/daycare)
+"wQ" = (/obj/effect/decal/cleanable/glass,/obj/structure/grille/broken,/obj/machinery/door/poddoor/preopen{name = "privacy shutters"; tag = "dcPrivacy2"},/turf/open/floor/wood,/area/awaymission/daycare)
+"wT" = (/obj/machinery/door/airlock/wood{name = "Operating Room"; req_access_txt = "45"},/turf/open/floor/wood,/area/awaymission/daycare)
+"xd" = (/obj/effect/turf_decal/stripes/line,/turf/open/floor/plasteel,/area/awaymission/daycare)
+"xk" = (/obj/structure/mirror{pixel_x = -28},/obj/structure/sink{dir = 8; pixel_x = -12; pixel_y = 2},/turf/open/floor/plasteel/freezer,/area/awaymission/daycare)
+"xq" = (/obj/machinery/door/airlock/wood{name = "Office"; req_access_txt = "45"},/turf/open/floor/wood,/area/awaymission/daycare)
+"xx" = (/obj/structure/fence/corner{dir = 1},/turf/open/floor/grass,/area/awaymission/daycare)
+"xL" = (/turf/closed/indestructible{icon_state = "iron0"},/area/awaymission/daycare)
+"xX" = (/turf/open/floor/grass/fairy/blue,/area/awaymission/daycare)
+"yb" = (/obj/structure/chair/highchairwood{dir = 8},/turf/open/floor/plasteel/cafeteria,/area/awaymission/daycare)
+"yh" = (/obj/structure/cable{icon_state = "1-2"},/turf/closed/wall/mineral/wood,/area/awaymission/daycare)
+"yS" = (/obj/machinery/shower{dir = 8; pixel_y = -4},/obj/structure/curtain,/turf/open/floor/wood,/area/awaymission/daycare)
+"yY" = (/obj/structure/bed,/obj/item/bedsheet/black,/turf/open/floor/wood,/area/awaymission/daycare)
+"zh" = (/obj/structure/bed{dir = 1},/obj/item/bedsheet/blue{dir = 1},/obj/item/toy/plush/dan,/turf/open/floor/wood,/area/awaymission/daycare)
+"zI" = (/obj/machinery/light/small{dir = 8},/turf/open/floor/wood,/area/awaymission/daycare)
+"Ac" = (/obj/machinery/light{dir = 4},/turf/open/floor/wood,/area/awaymission/daycare)
+"Ad" = (/obj/machinery/atmospherics/components/binary/pump{dir = 1; name = "pump to holding cell"},/turf/open/floor/wood,/area/awaymission/daycare)
+"Ao" = (/obj/effect/spawner/structure/window/reinforced,/obj/structure/barricade/wooden,/turf/open/floor/wood,/area/awaymission/daycare)
+"Ap" = (/obj/structure/chair/stool,/turf/open/floor/carpet/arcade,/area/awaymission/daycare)
+"AR" = (/obj/machinery/door/airlock/wood{id_tag = "daycareLuxury"; name = "Facility Lead Cabin"},/turf/open/floor/wood,/area/awaymission/daycare)
+"AY" = (/obj/structure/cable{icon_state = "2-8"},/obj/machinery/power/terminal{dir = 8},/turf/open/floor/plasteel,/area/awaymission/daycare)
+"Bb" = (/obj/structure/fence/corner{dir = 8},/turf/open/floor/grass,/area/awaymission/daycare)
+"Bi" = (/obj/structure/table,/obj/machinery/reagentgrinder{desc = "Used to grind things up into raw materials and liquids."; pixel_y = 5},/turf/open/floor/plasteel/cafeteria,/area/awaymission/daycare)
+"By" = (/obj/machinery/door/window{dir = 1},/turf/open/floor/wood{icon_state = "wood-broken5"},/area/awaymission/daycare)
+"BF" = (/obj/machinery/shower{dir = 4},/turf/open/floor/mineral/titanium/blue,/area/awaymission/daycare)
+"BH" = (/obj/machinery/door/airlock/wood{id_tag = "dcCabin2"; name = "Caretaker Cabin 2"},/turf/open/floor/wood,/area/awaymission/daycare)
+"BP" = (/obj/structure/curtain,/turf/open/floor/plasteel/freezer,/area/awaymission/daycare)
+"Cv" = (/obj/structure/flora/tree/jungle,/turf/open/floor/grass,/area/awaymission/daycare)
+"CY" = (/obj/structure/fence/corner{dir = 4},/turf/open/floor/grass,/area/awaymission/daycare)
+"Dk" = (/obj/machinery/light,/turf/open/floor/wood,/area/awaymission/daycare)
+"Ds" = (/obj/machinery/door/airlock/wood/glass{name = "Cafeteria"},/turf/open/floor/plasteel/cafeteria,/area/awaymission/daycare)
+"DA" = (/obj/machinery/power/smes/magical,/obj/structure/cable{icon_state = "0-4"},/turf/open/floor/plasteel,/area/awaymission/daycare)
+"DN" = (/obj/machinery/atmospherics/components/unary/outlet_injector,/turf/open/floor/padded,/area/awaymission/daycare)
+"DQ" = (/obj/machinery/light/small{dir = 4},/turf/open/floor/padded,/area/awaymission/daycare)
+"Ec" = (/obj/structure/bed{dir = 1},/obj/item/bedsheet/green{dir = 1},/obj/item/toy/plush/lizardplushie,/turf/open/floor/wood,/area/awaymission/daycare)
+"ES" = (/obj/machinery/door/airlock/wood{id_tag = "dcCabin1"; name = "Caretaker Cabin 1"},/turf/open/floor/wood,/area/awaymission/daycare)
+"ET" = (/obj/item/toy/plush/random,/turf/open/floor/grass/fairy/green,/area/awaymission/daycare)
+"EY" = (/obj/structure/fence{dir = 1},/turf/open/floor/grass,/area/awaymission/daycare)
+"FI" = (/turf/open/floor/carpet/blue,/area/awaymission/daycare)
+"Gk" = (/turf/closed/mineral/random/labormineral/daycare,/area/awaymission/daycare)
+"Go" = (/obj/structure/chair/sofa/right,/obj/machinery/light{dir = 1},/turf/open/floor/wood,/area/awaymission/daycare)
+"GW" = (/obj/machinery/light{dir = 8},/turf/open/floor/wood,/area/awaymission/daycare)
+"GX" = (/obj/item/kirbyplants/random,/turf/open/floor/wood,/area/awaymission/daycare)
+"Hb" = (/turf/open/floor/grass/fairy/green,/area/awaymission/daycare)
+"Hf" = (/obj/effect/spawner/structure/window/reinforced,/obj/machinery/door/poddoor/preopen{name = "privacy shutters"; tag = "dcPrivacy1"},/turf/open/floor/wood,/area/awaymission/daycare)
+"Hw" = (/obj/item/toy/plush/random,/turf/open/floor/grass/fairy,/area/awaymission/daycare)
+"HA" = (/obj/item/toy/plush/random,/turf/open/floor/grass/fairy/red,/area/awaymission/daycare)
+"HF" = (/obj/structure/reagent_dispensers/keg/diuretic,/turf/open/floor/wood{icon_state = "wood-broken5"},/area/awaymission/daycare)
+"HG" = (/obj/structure/chair/wood/normal{dir = 1},/turf/open/floor/grass/fairy/green,/area/awaymission/daycare)
+"HK" = (/obj/structure/closet/crate/diaperpail,/obj/item/paper/crumpled/awaymissions/daycare/theplan,/turf/open/floor/wood,/area/awaymission/daycare)
+"HU" = (/obj/structure/table,/obj/machinery/microwave{pixel_y = 6},/turf/open/floor/plasteel/cafeteria,/area/awaymission/daycare)
+"HY" = (/obj/machinery/door/airlock/wood,/turf/open/floor/wood,/area/awaymission/daycare)
+"Iq" = (/obj/structure/table/wood,/obj/item/flashlight/lamp/green{pixel_x = 9; pixel_y = -2},/turf/open/floor/carpet,/area/awaymission/daycare)
+"Ir" = (/obj/structure/bed,/obj/item/bedsheet/red,/obj/item/toy/plush/mothplushie,/turf/open/floor/wood,/area/awaymission/daycare)
+"Iw" = (/obj/structure/closet/secure_closet/freezer/meat,/turf/open/floor/plasteel/cafeteria,/area/awaymission/daycare)
+"IT" = (/turf/open/floor/grass/fairy/red,/area/awaymission/daycare)
+"JI" = (/obj/structure/table/wood,/obj/item/flashlight/lamp/green{pixel_x = -5; pixel_y = 8},/turf/open/floor/wood,/area/awaymission/daycare)
+"JO" = (/turf/open/floor/wood{icon_state = "wood-broken2"},/area/awaymission/daycare)
+"JS" = (/obj/structure/fence{dir = 8},/turf/open/floor/grass,/area/awaymission/daycare)
+"JU" = (/obj/structure/reagent_dispensers/keg/regression,/turf/open/floor/wood{icon_state = "wood-broken6"},/area/awaymission/daycare)
+"Kc" = (/obj/structure/filingcabinet,/turf/open/floor/wood,/area/awaymission/daycare)
+"Ki" = (/obj/structure/closet/crate/bin,/obj/item/paper/crumpled/awaymissions/daycare/escape,/turf/open/floor/wood,/area/awaymission/daycare)
+"Km" = (/obj/machinery/light{dir = 1},/turf/open/floor/plasteel/cafeteria,/area/awaymission/daycare)
+"Kn" = (/obj/structure/toilet{pixel_x = -6; pixel_y = 10},/obj/structure/sink{dir = 4; pixel_x = 12},/turf/open/floor/wood,/area/awaymission/daycare)
+"KB" = (/obj/structure/chair/office{dir = 8},/turf/open/floor/plasteel,/area/awaymission/daycare)
+"KL" = (/obj/machinery/light{dir = 8},/obj/structure/dresser,/turf/open/floor/wood,/area/awaymission/daycare)
+"KX" = (/obj/structure/closet/crate/bin,/turf/open/floor/wood,/area/awaymission/daycare)
+"Ll" = (/obj/machinery/light{dir = 4},/obj/item/paper/fluff/awaymissions/daycare/laura,/obj/structure/closet/secure_closet/personal/cabinet,/turf/open/floor/wood,/area/awaymission/daycare)
+"MC" = (/obj/item/kirbyplants{icon_state = "plant-20"},/turf/open/floor/wood,/area/awaymission/daycare)
+"ME" = (/obj/machinery/light/small{dir = 4},/turf/open/floor/carpet/blue,/area/awaymission/daycare)
+"MK" = (/turf/open/floor/plating/dirt/daycare,/area/awaymission/daycare)
+"MZ" = (/obj/machinery/vending/walldiaper{pixel_x = -26},/obj/structure/closet/crate/diaperpail,/turf/open/floor/plasteel/freezer,/area/awaymission/daycare)
+"NC" = (/obj/structure/chair/sofa/left,/obj/item/paper/pamphlet/ruin/originalcontent/pennywise{pixel_y = 28},/turf/open/floor/wood,/area/awaymission/daycare)
+"NF" = (/obj/structure/bookcase/random/reference,/turf/open/floor/wood,/area/awaymission/daycare)
+"NX" = (/obj/structure/bed/changingtable,/obj/machinery/light/small{dir = 1},/turf/open/floor/plasteel/freezer,/area/awaymission/daycare)
+"NZ" = (/obj/structure/sign/departments/norestroom{pixel_y = -32},/turf/open/floor/padded,/area/awaymission/daycare)
+"Oi" = (/turf/open/floor/plasteel/cafeteria,/area/awaymission/daycare)
+"Oy" = (/obj/structure/bed/changingtable{dir = 1},/turf/open/floor/wood,/area/awaymission/daycare)
+"OD" = (/obj/structure/chair/office/dark{dir = 8},/obj/machinery/button/door{name = "Potty Lock"; normaldoorcontrol = 1; pixel_x = -25; pixel_y = 25; specialfunctions = 4; tag = "daycareToilet"},/turf/open/floor/carpet/blue,/area/awaymission/daycare)
+"Pq" = (/obj/structure/chair/stool,/turf/open/floor/plasteel/cafeteria,/area/awaymission/daycare)
+"Pr" = (/obj/effect/decal/cleanable/blood/drip,/turf/open/floor/plating/dirt/daycare,/area/awaymission/daycare)
+"Pv" = (/turf/open/floor/plasteel/white/corner{dir = 4},/area/awaymission/daycare)
+"PE" = (/turf/open/floor/wood{icon_state = "wood-broken5"},/area/awaymission/daycare)
+"PR" = (/obj/machinery/computer/operating{dir = 8},/obj/item/disk/surgery/brainwashing,/turf/open/floor/plasteel/white/side{dir = 8},/area/awaymission/daycare)
+"Qh" = (/obj/structure/cable{icon_state = "0-4"},/obj/effect/turf_decal/stripes/line,/turf/open/floor/plasteel,/area/awaymission/daycare)
+"Ql" = (/obj/structure/table,/obj/item/storage/backpack/duffelbag/med/surgery,/turf/open/floor/plasteel/white/corner{dir = 1},/area/awaymission/daycare)
+"Qn" = (/obj/structure/flora/tree/jungle/small,/turf/open/floor/grass,/area/awaymission/daycare)
+"QU" = (/obj/structure/sign/departments/changingroom{pixel_x = 32; pixel_y = 32},/turf/open/floor/plasteel/freezer,/area/awaymission/daycare)
+"Rc" = (/obj/machinery/computer/security/wooden_tv,/turf/open/floor/wood,/area/awaymission/daycare)
+"Re" = (/obj/machinery/light/small{dir = 1},/turf/open/floor/plasteel/white/side,/area/awaymission/daycare)
+"RH" = (/obj/structure/table/reinforced,/obj/item/paper/fluff/awaymissions/daycare/noentry,/turf/open/floor/plasteel,/area/awaymission/daycare)
+"RR" = (/turf/open/floor/plasteel/white,/area/awaymission/daycare)
+"RV" = (/obj/structure/reagent_dispensers/keg/milk,/turf/open/floor/plasteel/cafeteria,/area/awaymission/daycare)
+"RZ" = (/obj/machinery/button{name = "cafeteria shutters"; pixel_x = 28; pixel_y = 28; tag = "daycareKitchen"},/turf/open/floor/plasteel/cafeteria,/area/awaymission/daycare)
+"Sh" = (/obj/structure/table/wood,/obj/item/paper/pamphlet/daycareCover,/turf/open/floor/wood,/area/awaymission/daycare)
+"Sl" = (/obj/effect/spawner/structure/window/reinforced,/obj/machinery/door/poddoor/preopen{name = "privacy shutters"; tag = "luxuryPrivacy"},/turf/open/floor/wood,/area/awaymission/daycare)
+"Sn" = (/obj/structure/closet/crate/trashcart,/turf/open/floor/plating/dirt/daycare,/area/awaymission/daycare)
+"SQ" = (/obj/structure/fence/cut/medium{dir = 4},/turf/open/floor/grass,/area/awaymission/daycare)
+"Tp" = (/obj/structure/fence/cut/large{dir = 4},/turf/open/floor/grass,/area/awaymission/daycare)
+"Ts" = (/obj/effect/decal/cleanable/blood/drip,/turf/open/floor/wood,/area/awaymission/daycare)
+"TD" = (/obj/effect/decal/cleanable/blood/drip,/turf/open/floor/wood{icon_state = "wood-broken2"},/area/awaymission/daycare)
+"TE" = (/obj/structure/bed,/obj/item/bedsheet/medical,/obj/machinery/iv_drip,/obj/item/toy/plush/carby,/turf/open/floor/plasteel/white/corner{dir = 8},/area/awaymission/daycare)
+"TL" = (/obj/structure/fence/door/opened,/turf/open/floor/plating/dirt/daycare,/area/awaymission/daycare)
+"TP" = (/obj/structure/closet/secure_closet/freezer/kitchen,/turf/open/floor/plasteel/cafeteria,/area/awaymission/daycare)
+"Ut" = (/obj/structure/bed,/obj/item/bedsheet/medical,/obj/machinery/iv_drip,/obj/item/toy/plush/catgirl/fermis,/turf/open/floor/plasteel/white/side{dir = 8},/area/awaymission/daycare)
+"Ux" = (/turf/open/floor/carpet,/area/awaymission/daycare)
+"UL" = (/obj/machinery/atmospherics/components/unary/portables_connector{dir = 1},/turf/open/floor/wood,/area/awaymission/daycare)
+"Vy" = (/obj/machinery/door/airlock/wood/glass{name = "Recovery"},/turf/open/floor/wood{icon_state = "wood-broken2"},/area/awaymission/daycare)
+"VD" = (/obj/structure/table/wood,/turf/open/floor/carpet/blue,/area/awaymission/daycare)
+"VG" = (/turf/open/floor/wood{icon_state = "wood-broken7"},/area/awaymission/daycare)
+"VT" = (/obj/effect/decal/cleanable/blood/splats,/obj/effect/decal/remains/human/grave{name = "Lars' remains"},/turf/open/floor/wood,/area/awaymission/daycare)
+"We" = (/obj/structure/fence/cut/medium{dir = 1},/turf/open/floor/grass,/area/awaymission/daycare)
+"Wi" = (/obj/structure/table/wood,/obj/item/storage/dice,/turf/open/floor/grass/fairy/red,/area/awaymission/daycare)
+"WT" = (/obj/machinery/door/poddoor{name = "Smoke Access"; tag = smokeDoor},/turf/open/floor/plating,/area/awaymission/daycare)
+"Xl" = (/obj/effect/decal/cleanable/blood/splats,/obj/item/chair/stool,/turf/open/floor/grass,/area/awaymission/daycare)
+"Xp" = (/obj/structure/table/reinforced,/turf/open/floor/plasteel,/area/awaymission/daycare)
+"Xx" = (/obj/structure/chair/office/dark{dir = 8},/turf/open/floor/wood,/area/awaymission/daycare)
+"XG" = (/obj/structure/chair/highchairwood{dir = 4},/turf/open/floor/plasteel/cafeteria,/area/awaymission/daycare)
+"XR" = (/obj/structure/table/reinforced,/obj/machinery/door/poddoor/shutters/preopen{id = "daycareKitchen"; name = "kitchen shutters"},/turf/open/floor/plasteel/cafeteria,/area/awaymission/daycare)
+"Yb" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/closed/wall/mineral/wood,/area/awaymission/daycare)
+"Ym" = (/turf/open/floor/wood,/area/awaymission/daycare)
+"YN" = (/turf/closed/wall/mineral/wood,/area/awaymission/daycare)
+"Zb" = (/obj/effect/decal/cleanable/blood/drip,/turf/open/floor/grass,/area/awaymission/daycare)
+"Zm" = (/obj/effect/decal/cleanable/blood/tracks{dir = 8},/turf/open/floor/wood,/area/awaymission/daycare)
+"ZU" = (/obj/structure/fence/corner{dir = 5},/turf/open/floor/grass,/area/awaymission/daycare)
+"ZX" = (/turf/open/floor/grass,/area/awaymission/daycare)
+
+(1,1,1) = {"
+xLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXQnZXZXZXZXZXCvZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXCvZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXQnZXZXZXZXZXQnZXZXZXZXZXQnZXZXZXZXZXZXZXQnZXZXZXQnZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXBbbObObObObObObObObObObObObObObOTpbObObObObObObObObObObObObObObObObObObObObObObObObOCYZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXCvZXZXZXZXZXQnZXZXZXZXEYZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXZXZXZXZXZXQnZXCvZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXCvZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXZXZXYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNYNZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXZXZXYNdAdAdAWTjmYNkqYNnARegZYNOyHKYmqxNFbiITHwITxXWiYNZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXCvZXZXZXZXZXZXZXZXZXZXZXCvZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXEYZXZXZXZXZXZXZXYNdAdADQYNcLhFYmYNgORRPRYNYmYmYmYmYmYmHbkLHbkLHGYNZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXZXZXZXQnZXZXCvZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXZXZXYNDNNZdAcYpzYmYmwTPvlzQlYNpzrKjorKYmJOHAxXITxXITYNYNYNYNYNYNZXZXZXZXEYZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXCvZXZXZXEYZXZXZXZXZXZXZXYNYbYNYNYNYNlZYNYNYNYNYNYNGWApjoApYmYmHbkLETkLjyYNEcYmPEIrYNZXZXZXZXEYZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXCvZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXZXZXYNAdYmoBYmgqTDYmdrqnReTEYNYmrKjorKYmYmITphITxXITYNbKYmYmLlYNZXZXZXZXEYZXZXZXZXZXZXZXZXQnZXZXZXZXQnZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXkpZXZXZXZXZXZXZXYNULYmcOYmYNzIYmVyrURRUtYNYmApjojoYmYmHbkLHbkLHbYNzhYmYmfsYNZXZXZXZXEYZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXEYZXZXZXZXZXZXZXYNYNbQbqJUYNYmdwdreGmOgTYNYmYmYmsgYmDkYmJOYmYmYmgBkdYmYmYmYNZXZXZXZXEYZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXZXZXZXYNHFiejYYNaYYNYNYNYNYNYNYNYNpsYNYNYNYNYNYNYNYNYNoeYmYmwcYNZXZXZXZXEYZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXYNYNYNYNYNYNYNYNYNYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYNYmYNKLcOYmdsYNZXZXZXZXEYZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXQnZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXYNMCGoNCnOYNYmYmYmYmpzYmYmYmYmYmPEYmYmYmYmYmVGYmYmYNYNYNoyYmYmiEYNZXZXZXZXEYZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXCvZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXAoYmYmsgYmYmYmTsYmYmYmYmYmYNDsYNYNYNDsYNvtYNYNYNxqYNRcYNYNYNYNYNYNZXZXZXZXEYZXZXZXQnZXZXZXZXZXZXZXZXCvZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXAoYmuiuiYmYNYNByYNYNqiYNYNYNOiXGKmybOiXRRZBiHUYNYmVDODYNZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXEYZXZXZXZXYNYmuiuiYmShYmYmYNMZQUBPNXYNOiXGOiybOiXROiOiOiYNYmVDMEYNZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXCvZXZXZXZXZXZXZXZXZXEYZXZXZXMKdRYmuiuiYmnOXxAcYNppmxYNYNYNOiOiOiOiOiXROigPdXYNYmFIFIYNZXZXZXZXZXZXZXZXZXEYZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXCvZXZXZXZXZXZXZXZXZXCvZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXMKYNJOYmYmYmnXYmYmYNxksIoJwqYNOiPqPqPqOiXROiOiqLYNYmYmKcYNZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXEYZXZXZXMKYNYNYNYNYNYNYNYNYNYNYNYNYNYNOigPaegPOiXROiOiOiYNYNYNYNYNZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXMKMKMKMKMKMKMKMKMKMKMKMKMKSnYNYNYNYNYNYNYNRVIwTPYNZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXQnZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXQnZXZXZXZXZXZXZXEYZXZXZXMKZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXYNYNYNYNYNZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXCvZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXQnZXZXZXZXEYZXZXZXMKZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXPrZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXQnZXZXEYZXZXZXMKZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXQnZXZXZXCvZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXxxJSJSJSTLJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSTpJSJSJSJSJSZUZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXCvZXZXZXZXZXZXZXZXZXZXZXMKZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXMKMKZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXCvZXZXZXZXZXZXZXZXQnZXZXZXZXCvZXZXZXQnZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXMKMKMKZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXMKMKZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXMKMKZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXMKMKMKZXCvZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXBbJSJSTpJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSSQJSJSJSJSJSGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZbMKMKZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXYNYNYNYNZXZXZXZXZXZXZXZXGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXCvZXZXZXZXZXZXZXMKMKMKZXZXZXZXZXZXZXZXCvZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXCvZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXYNDAAYYNZXZXZXZXZXZXZXZXZXGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXMKMKMKMKMKZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXkJMKMKMKkJMKMKkJMKMKMKkJZXZXYNYNYNyhYNZXZXZXZXZXZXZXZXZXGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXMKMKMKMKMKMKZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXCvZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXMKMKMKMKMKMKMKMKMKMKMKMKZXZXYNebebiAYNZXZXZXZXZXZXZXZXZXGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXMKMKMKMKMKMKZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXEYZXZXMKMKMKMKMKMKMKMKMKMKMKMKZXZXYNebnJiAYNZXZXZXZXZXZXZXZXZXGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXCvZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXMKMKPrMKMKMKMKMKMKMKMKMKMKMKZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXCvZXZXZXZXZXZXZXEYZXZXkJMKMKMKMKMKMKMKMKMKMKkJZXZXYNxdQhbbYNZXZXZXZXZXZXZXZXZXZXGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXCvZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXMKMKMKMKMKMKMKMKMKMKMKMKMKMKMKMKMKMKMKMKMKMKMKMKMKZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXWeZXZXMKMKMKMKMKMKMKMKMKMKMKMKZXZXYNRHlFKBYNZXZXZXZXZXZXZXZXZXZXGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXXlMKMKMKMKMKMKMKMKMKMKMKMKMKMKMKMKMKMKMKMKMKMKMKMKMKMKZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXMKMKMKMKMKMKMKMKMKMKMKMKZXZXYNXpebKBYNZXZXZXZXZXZXZXZXZXZXGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXCvZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXMKMKMKMKMKMKMKMKMKMKMKMKMKMKMKMKMKZXZXZXZXZXZXZXZXZXZXEYZXZXkJMKMKMKkJMKMKkJMKMKMKkJZXZXYNYNebYNYNZXZXZXZXZXZXZXZXZXZXGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXuSZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXMKMKMKMKMKMKMKMKMKMKMKMKZXZXZXZXEYZXZXZXZXZXZXZXMKMKZXZXZXZXZXZXZXZXZXMKZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXMKMKMKMKMKMKMKMKMKMKMKMKZXEYZXZXZXZXZXZXMKMKMKMKMKZXZXZXZXZXMKMKMKZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXCvZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXMKMKMKMKMKMKMKMKMKivMKMKMKMKMKMKMKMKMKMKMKMKMKMKMKMKMKMKMKMKZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXMKMKMKMKMKMKMKMKMKMKMKMKMKMKMKMKZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXQnZXZXZXCvZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXuSZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXMKMKMKMKMKMKMKnnnnnnnnMKMKMKMKZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXCvZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXZXMKMKMKeTnnnnnnnnnnnnnnMKMKMKMKZXYNYNYNYNYNZXZXZXGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXCvZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXZXZXMKMKnnnnnnnnnnnnnnnnnnMKMKMKZXYNfeKibKYNZXZXZXGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXZXZXMKMKnnnnnnnnnnnnnnnnnnMKMKMKMKESsuYmyYHfZXZXZXGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXuSZXZXZXZXZXZXZXZXZXZXZXZXnKZXZXZXZXZXZXZXZXZXZXnKZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXZXZXMKMKMKMKnnnnnnMKnnnnMKMKMKMKZXYNGXYmcbYNZXZXZXGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXCvZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXZXZXZXMKMKMKMKMKMKMKMKMKMKMKMKMKZXYNYNHYYNYNZXZXGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXZXZXZXMKMKMKMKMKMKMKMKMKMKMKMKZXZXYNhnYmySYNZXZXGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXCvZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXZXZXZXZXMKMKMKMKMKZXMKMKMKMKZXZXZXYNYNYNYNYNZXZXGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXZXZXZXZXZXZXMKZXZXZXZXZXMKZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXYNYNYNYNYNYNARYNYNZXYNYNBHYNYNYNYNZXZXZXZXZXZXGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXCvZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXCvZXZXZXEYZXZXZXZXZXYNidkspuYmYmtybtYNZXYNJIcWGXYNKnYNZXZXZXZXZXZXGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXCvZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXCvZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXYNBFaHYNbKUxUxmyYNZXYNKXYmZmHYVTYNZXZXZXZXZXZXGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXCvZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXYNYNYNYNoPUxUxIqYNZXYNbKwDcbYNnfYNZXZXZXZXZXGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXZXZXZXYNdsUxUxaiYNZXYNYNwQYNYNYNYNZXZXZXZXZXGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXCvZXZXZXZXCvZXZXZXZXZXZXZXCvZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXCvZXZXZXZXZXQnZXZXZXZXZXQnZXZXxxJSJSTpJSZUZXZXZXYNYNSlSlYNYNZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXCvZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXQnZXZXZXZXQnZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXuSZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXCvZXZXZXZXZXZXZXZXZXZXZXCvZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXEYZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXCvZXZXZXZXZXZXZXZXZXCvZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXEYZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXWeZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXrkZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXCvZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXEYZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXQnZXZXZXZXZXZXZXZXCvZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXCvZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXZXGkGkGkGkGkZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkZXZXZXZXZXGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkGkxL
+xLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxLxL
+"}

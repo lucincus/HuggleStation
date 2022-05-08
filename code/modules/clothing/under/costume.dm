@@ -362,3 +362,10 @@
 	icon_state = "SwagOutfit"
 	item_state = "SwagOutfit"
 	can_adjust = FALSE
+
+/obj/item/clothing/under/costume/iswm
+	name = "ISWM replica jumpsuit"
+	desc = "A relic reminiscent of an ancient, at this point outdated series... It's a nice jumpsuit though."
+	icon_state = "iswm"
+	item_state = "iswm"
+	can_adjust = FALSE

@@ -22,4 +22,6 @@
 		if(istype(H.belt, belt))
 			S.energyKatana = H.belt
 		S.randomize_param()
-
+	H.grant_language(/datum/language/neokanji)
+	var/datum/language_holder/LH = H.get_language_holder()
+	LH.selected_language = /datum/language/neokanji

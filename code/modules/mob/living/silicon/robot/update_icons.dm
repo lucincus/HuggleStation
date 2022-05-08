@@ -62,4 +62,123 @@
 		else
 			icon_state = "[module.cyborg_base_icon]"
 
+	if(incontinent == TRUE)
+		var/underwear = 'modular_citadel/icons/mob/widerobotpamp.dmi'
+		var/undie_color
+		switch(brand)
+			if("plain")
+				undie_color = "FFFFFF"
+			if("classic")
+				undie_color = "66FF66"
+			if("thirteen")
+				undie_color = "FFFFFF"
+			if("swaddles")
+				undie_color = "3399CC"
+			if("cloth")
+				undie_color = "FFFFFF"
+			if("hefters_m")
+				undie_color = "EEEEFF"
+			if("hefters_f")
+				undie_color = "FFDDEE"
+			if("princess")
+				undie_color = "FF99FF"
+			if("pwrgame")
+				undie_color = "8833FF"
+			if("starkist")
+				undie_color = "FF9933"
+			if("space")
+				undie_color = "3366CC"
+			if("syndi")
+				undie_color = "CC0000"
+			if("service")
+				undie_color = "999999"
+			if("supply")
+				undie_color = "DDBB22"
+			if("hydro")
+				undie_color = "00FF00"
+			if("sec")
+				undie_color = "111111"
+			if("engi")
+				undie_color = "FFEE00"
+			if("atmos")
+				undie_color = "FFEE00"
+			if("sci")
+				undie_color = "660099"
+			if("med")
+				undie_color = "4488AA"
+			if("miner")
+				undie_color = "777777"
+			if("miner_thick")
+				undie_color = "777777"
+			if("jeans")
+				undie_color = "587890"
+			if("jeans_thick")
+				undie_color = "587890"
+			if("circuit")
+				undie_color = "003300"
+			if("pink")
+				undie_color = "FFC0CB"
+			if("pink_thick")
+				undie_color = "FFC0CB"
+			if("punk")
+				undie_color = "000000"
+			if("punk_thick")
+				undie_color = "000000"
+			if("fish")
+				undie_color = "ABCDEF"
+			if("SMWind")
+				undie_color = "0BDA51"
+			if("ratvar")
+				undie_color = "B8860B"
+			if("narsie")
+				undie_color = "3D0000"
+			if("ashwalker")
+				undie_color = "DAA520"
+			if("camo")
+				undie_color = "568203"
+			if("alien")
+				undie_color = "563C5C"
+			if("greentext")
+				undie_color = "46DA3E"
+			if("scalies")
+				undie_color = "46DA3E"
+			if("blackcat")
+				undie_color = "FFFFFF"
+			if("goldendog")
+				undie_color = "000000"
+			if("leafy")
+				undie_color = "698B57"
+			if("slime")
+				undie_color = "83639D"
+			if("skunk")
+				underwear = 'modular_citadel/icons/mob/widerobotpamp.dmi'
+			if("bee")
+				underwear = 'modular_citadel/icons/mob/widerobotpamp.dmi'
+			if("rainbow")
+				underwear = 'modular_citadel/icons/mob/widerobotpamp.dmi'
+			if("rainbowse")
+				underwear = 'modular_citadel/icons/mob/widerobotpamp.dmi'
+			if("matrix")
+				underwear = 'modular_citadel/icons/mob/widerobotpamp.dmi'
+			if("ringading")
+				underwear = 'modular_citadel/icons/mob/widerobotpamp.dmi'
+			if("hawaiir")
+				underwear = 'modular_citadel/icons/mob/widerobotpamp.dmi'
+			if("hawaiib")
+				underwear = 'modular_citadel/icons/mob/widerobotpamp.dmi'
+			if("pumpkin")
+				underwear = 'modular_citadel/icons/mob/widerobotpamp.dmi'
+			if("jacko")
+				underwear = 'modular_citadel/icons/mob/widerobotpamp.dmi'
+		var/mutable_appearance/MA3a = mutable_appearance(underwear, module.cyborg_base_icon, -BODY_TAURTAIL_LAYER, color = "#[undie_color]")
+		if (stat != DEAD)
+			if(resting)
+				if(sitting)
+					MA3a.icon_state = "[module.cyborg_base_icon]" + "_sit"
+				if(bellyup)
+					MA3a.icon_state = "[module.cyborg_base_icon]" + "_belly"
+				else if(!sitting && !bellyup)
+					MA3a.icon_state = "[module.cyborg_base_icon]" + "_rest"
+			overlays.Add(MA3a)
+
 	SEND_SIGNAL(src, COMSIG_ROBOT_UPDATE_ICONS)

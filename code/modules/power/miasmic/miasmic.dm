@@ -28,3 +28,4 @@
 		G.set_moles(GAS_DIAPERSMELL, (G.get_moles(GAS_DIAPERSMELL) * 0.8))
 		G.set_moles(GAS_MIASMA, (G.get_moles(GAS_MIASMA) * 0.8))
 		G.set_moles(GAS_METHANE, (G.get_moles(GAS_METHANE) * 0.8))
+		G.set_temperature(G.return_temperature() + 0.1)

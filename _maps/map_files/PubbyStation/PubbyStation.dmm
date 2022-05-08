@@ -44274,7 +44274,6 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -27
 	},
-/obj/item/clothing/glasses/meson/gar,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
 	},

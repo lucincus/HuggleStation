@@ -513,6 +513,47 @@
 	list_reagents = list(/datum/reagent/consumable/space_cola = 30)
 	foodtype = SUGAR
 
+/obj/item/reagent_containers/food/drinks/soda_cans/pspspsi
+	name = "Pspspsi"
+	desc = "Cats love it. Probably. We don't actually know."
+	icon_state = "pspspsi"
+	list_reagents = list(/datum/reagent/consumable/pspspsi = 30)
+	foodtype = SUGAR
+
+/obj/item/reagent_containers/food/drinks/soda_cans/drpupper
+	name = "Dr. Pupper"
+	desc = "Dogs love it. Then again they love pretty much everything."
+	icon_state = "drpupper"
+	list_reagents = list(/datum/reagent/consumable/drpup = 30)
+	foodtype = SUGAR
+
+/obj/item/reagent_containers/food/drinks/soda_cans/pinkcan
+	name = "Pink Drink"
+	desc = "It's pink and it's a drink. It tastes pink too."
+	icon_state = "pinkcan"
+	list_reagents = list(/datum/reagent/consumable/pinkcan = 30)
+	foodtype = SUGAR
+
+/obj/item/reagent_containers/food/drinks/soda_cans/sunnyp
+	name = "Sunny P"
+	desc = "Embrace the golden stream."
+	icon_state = "sunnyp"
+	list_reagents = list(/datum/reagent/consumable/sunp = 30)
+	foodtype = SUGAR
+
+/obj/item/reagent_containers/food/drinks/soda_cans/mtndo
+	name = "Mountain Doo"
+	desc = "Free your mind and your bowels."
+	icon_state = "mountaindoo"
+	list_reagents = list(/datum/reagent/consumable/mtndo = 30)
+	foodtype = SUGAR
+
+/obj/item/reagent_containers/food/drinks/soda_cans/inwat
+	name = "Instant Water"
+	desc = "Just add water!"
+	icon_state = "instantwater"
+
+
 /obj/item/reagent_containers/food/drinks/soda_cans/tonic
 	name = "T-Borg's tonic water"
 	desc = "Quinine tastes funny, but at least it'll keep that Space Malaria away."

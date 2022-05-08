@@ -296,6 +296,10 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	icon_state = "xenomaint"
 	area_flags = VALID_TERRITORY | BLOBS_ALLOWED | UNIQUE_AREA | XENOBIOLOGY_COMPATIBLE | CULT_PERMITTED
 
+/area/maintenance/nursery
+	name = "Nursery Maintenance"
+	icon_state = "maint_nursery"
+
 //Maintenance - Generic
 
 /area/maintenance/arrivals/north
@@ -1680,6 +1684,14 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/nursery
 	name = "Nursery"
 	icon_state = "nursery"
+
+/area/nursery/naproom
+	name = "Naproom"
+	icon_state = "naproom"
+
+/area/nursery/playroom
+	name = "Playroom"
+	icon_state = "playroom"
 
 // Telecommunications Satellite
 

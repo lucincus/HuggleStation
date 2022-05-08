@@ -78,6 +78,13 @@ Difficulty: Medium
 	smallsprite.Grant(src)
 	. = ..()
 	internal = new/obj/item/gps/internal/dragon(src)
+	if(prob(34))
+		icon_state = "ddragon"
+		icon_living = "ddragon"
+		name = "incontinent ash drake"
+		desc = "Incontinent guardians of the necropolis."
+		guaranteed_butcher_results = list(/obj/item/stack/sheet/animalhide/ashdrake = 10, /obj/item/diaper_package/ashwalker = 2)
+
 
 /mob/living/simple_animal/hostile/megafauna/dragon/ex_act(severity, target)
 	if(severity == 3)

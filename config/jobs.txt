@@ -47,6 +47,3 @@ Security Officer=5,5
 
 AI=0,1
 Cyborg=0,1
-
-Nursery Worker=4,4
-Baby=5,5

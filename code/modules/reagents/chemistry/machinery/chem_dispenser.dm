@@ -599,7 +599,10 @@
 		/datum/reagent/consumable/limejuice,
 		/datum/reagent/consumable/tomatojuice,
 		/datum/reagent/consumable/lemonjuice,
-		/datum/reagent/consumable/menthol
+		/datum/reagent/consumable/menthol,
+		/datum/reagent/consumable/drpup,
+		/datum/reagent/consumable/pspspsi,
+		/datum/reagent/consumable/pinkcan
 	)
 	upgrade_reagents = list(
 		/datum/reagent/consumable/banana,
@@ -621,7 +624,9 @@
 		/datum/reagent/toxin/mindbreaker,
 		/datum/reagent/toxin/staminatoxin,
 		/datum/reagent/medicine/cryoxadone,
-		/datum/reagent/iron
+		/datum/reagent/iron,
+		/datum/reagent/consumable/sunp,
+		/datum/reagent/consumable/mtndo
 	)
 
 /obj/machinery/chem_dispenser/drinks/fullupgrade //fully ugpraded stock parts, emagged

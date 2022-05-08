@@ -236,6 +236,7 @@
 #define TRAIT_DIAPERUSE "diaper_use"
 #define TRAIT_EXACTCHECK "exact_check"
 #define TRAIT_NOCHANGESELF "no_change_self"
+#define TRAIT_BATHROOMBANNED "bathroom_banned"
 
 // mobility flag traits
 // IN THE FUTURE, IT WOULD BE NICE TO DO SOMETHING SIMILAR TO https://github.com/tgstation/tgstation/pull/48923/files (ofcourse not nearly the same because I have my.. thoughts on it)

@@ -467,6 +467,14 @@
 	admin_notes = "Pretty freakin' large, almost as big as Raven or Cere. Excercise caution with it."
 	credit_cost = 8000
 
+/datum/map_template/shuttle/emergency/bathroom
+	suffix = "bathroom"
+	name = "Emergency Bathroom"
+	description = "A sizable shuttle used to provide extra restrooms for special events NanoTrasen Corporate hosts in your sector. \
+	In addition to several toilets, it features a small play area and diaper changing room for small children or babies."
+	admin_notes = "Pretty big shuttle, about the size of Cere, be careful with it."
+	credit_cost = 5000
+
 /datum/map_template/shuttle/ferry/base
 	suffix = "base"
 	name = "transport ferry"

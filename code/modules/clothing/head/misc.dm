@@ -494,3 +494,17 @@
 	desc = "This will scare them. All will know my power."
 	icon_state = "human_leather"
 	item_state = "human_leather"
+
+/obj/item/clothing/head/iswmr
+	name = "ISWM replica beret (blue)"
+	desc = "A royal blue beret with a red logo."
+	icon_state = "iswmr"
+	item_state = "iswmr"
+	dynamic_hair_suffix = ""
+
+/obj/item/clothing/head/iswmo
+	name = "ISWM replica beret (orange)"
+	desc = "An orange beret with a blue logo."
+	icon_state = "iswmo"
+	item_state = "iswmo"
+	dynamic_hair_suffix = ""

@@ -556,6 +556,16 @@ Recharging stations are available in robotics, the dormitory bathrooms, and the 
 	desc = "Unit's power cell is running low. Recharging stations are available in robotics, the dormitory bathrooms, and the AI satellite."
 	icon_state = "lowcell"
 
+/atom/movable/screen/alert/emptycoolant
+	name = "Out of Coolant"
+	desc = "Unit's coolant tank is empty. No modules aside from the drinking tube are available until coolant is acquired. \
+	Use the drinking tube to drink fluids to use as coolant."
+	icon_state = "emptycell"
+
+/atom/movable/screen/alert/lowcoolant
+	name = "Low Coolant"
+	desc = "Unit's coolant levels are running low. Use the drinking tube to drink fluids to use as coolant."
+	icon_state = "lowcell"
 /atom/movable/screen/alert/etherealcharge
 	name = "Low Blood Charge"
 	desc = "Your blood's electric charge is running low, find a source of charge for your blood. Use a recharging station found in robotics or the dormitory bathrooms, or eat some Ethereal-friendly food."

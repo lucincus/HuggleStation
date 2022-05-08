@@ -75,6 +75,14 @@
 	speech_args[SPEECH_MESSAGE] = lowertext(message)
 	return speech_args
 
+/datum/accent/babby/modify_speech(list/speech_args)
+	var/message = speech_args[SPEECH_MESSAGE]
+	if(message[1] != "*")
+		message = replacetext(message, "l", "w")
+		message = replacetext(message, "r", "w")
+		speech_args[SPEECH_MESSAGE] = message
+	return speech_args
+
 /datum/accent/span
 	var/span_flag
 

@@ -769,6 +769,18 @@
 			H.dna.features["mam_snouts"] = "Mammal, Short"
 			H.dna.features["tail_lizard"] = "None"
 			H.dna.features["mam_tail"] = "Skunk"
+		if(time2text(world.timeofday, "Month") == "April" && text2num(time2text(world.timeofday,"DD")) > 1 && text2num(time2text(world.timeofday,"DD")) < 28)
+			if(HAS_TRAIT(H,TRAIT_ROBOTIC_ORGANISM))
+				H.set_species(/datum/species/mammal/synthetic)
+				H.custom_species = "Proto-Bun"
+			else
+				H.set_species(/datum/species/mammal)
+				H.custom_species = "Rabbit"
+			H.dna.features["mam_body_markings"] = list(/datum/sprite_accessory/mam_body_markings/bellyslim)
+			H.dna.features["mam_ears"] = "Rabbit (Straight-eared)"
+			H.dna.features["mam_snouts"] = "Mammal, Short"
+			H.dna.features["tail_lizard"] = "None"
+			H.dna.features["mam_tail"] = "Rabbit"
 	H.dna.update_dna_identity()
 	if(mind)
 		if(transfer_after)

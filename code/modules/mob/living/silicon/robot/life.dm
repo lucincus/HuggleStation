@@ -53,18 +53,32 @@
 
 /mob/living/silicon/robot/proc/update_cell_hud_icon()
 	if(cell)
-		var/cellcharge = cell.charge/cell.maxcharge
-		switch(cellcharge)
-			if(0.75 to INFINITY)
-				clear_alert("charge")
-			if(0.5 to 0.75)
-				throw_alert("charge", /atom/movable/screen/alert/lowcell, 1)
-			if(0.25 to 0.5)
-				throw_alert("charge", /atom/movable/screen/alert/lowcell, 2)
-			if(0.01 to 0.25)
-				throw_alert("charge", /atom/movable/screen/alert/lowcell, 3)
-			else
-				throw_alert("charge", /atom/movable/screen/alert/emptycell)
+		if(incontinent == FALSE)
+			var/cellcharge = cell.charge/cell.maxcharge
+			switch(cellcharge)
+				if(0.75 to INFINITY)
+					clear_alert("charge")
+				if(0.5 to 0.75)
+					throw_alert("charge", /atom/movable/screen/alert/lowcell, 1)
+				if(0.25 to 0.5)
+					throw_alert("charge", /atom/movable/screen/alert/lowcell, 2)
+				if(0.01 to 0.25)
+					throw_alert("charge", /atom/movable/screen/alert/lowcell, 3)
+				else
+					throw_alert("charge", /atom/movable/screen/alert/emptycell)
+		else
+			var/fluidcharge = fluids/500
+			switch(fluidcharge)
+				if(0.25 to INFINITY)
+					clear_alert("charge")
+				if(0.15 to 0.25)
+					throw_alert("charge", /atom/movable/screen/alert/lowcoolant, 1)
+				if(0.05 to 0.15)
+					throw_alert("charge", /atom/movable/screen/alert/lowcoolant, 2)
+				if(0.002 to 0.05)
+					throw_alert("charge", /atom/movable/screen/alert/lowcoolant, 3)
+				else
+					throw_alert("charge", /atom/movable/screen/alert/emptycoolant)
 	else
 		throw_alert("charge", /atom/movable/screen/alert/nocell)
 

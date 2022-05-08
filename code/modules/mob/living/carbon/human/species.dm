@@ -789,7 +789,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 					MA.color = "#[H.socks_color]"
 				standing += MA
 
-		if(H.underwear && !H.hidden_underwear && (H.is_groin_exposed() || H.dna.features["taur"]))
+		if(H.underwear && (!H.hidden_underwear || H.dna.features["taur"]))
 			if(H.saved_underwear)
 				H.underwear = H.saved_underwear
 				H.saved_underwear = ""

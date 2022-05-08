@@ -26,6 +26,8 @@
 		/datum/language/vampiric,
 		/datum/language/dwarf,
 		/datum/language/signlanguage,
+		/datum/language/neokanji,
+		/datum/language/sylvan,
 	))
 	healing_factor = STANDARD_ORGAN_HEALING*5 //Fast!!
 	decay_factor = STANDARD_ORGAN_DECAY/2
@@ -214,6 +216,11 @@
 	maxHealth = 35 //Sensitive tongue!
 	initial_accents = list(/datum/accent/fluffy)
 
+/obj/item/organ/tongue/babby
+	name = "impeded tongue"
+	desc = "Looks like it's not shaped right?"
+	initial_accents = list(/datum/accent/babby)
+
 /obj/item/organ/tongue/cybernetic
 	name = "cybernetic tongue"
 	desc = "A state of the art robotic tongue that can detect the pH of anything drank."
@@ -253,7 +260,8 @@
 		/datum/language/beachbum,
 		/datum/language/aphasia,
 		/datum/language/sylvan,
-		/datum/language/voltaic
+		/datum/language/voltaic,
+		/datum/language/neokanji,
 	))
 
 /obj/item/organ/tongue/ethereal/Initialize(mapload)

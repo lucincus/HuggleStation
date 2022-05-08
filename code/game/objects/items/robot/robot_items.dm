@@ -1028,3 +1028,58 @@
 		return
 	do_attack_animation(target, null, src)
 	user.visible_message("<span class='notice'>[user] [pick("nuzzles", "pushes", "boops")] \the [target.name] with their nose!</span>")
+
+/obj/item/coolant_tube
+	name = "drinking tube"
+	desc = "A tube that allows cyborgs to drink and restore their coolant levels."
+	icon = 'icons/mob/robot_items.dmi'
+	icon_state = "coolant"
+	item_flags = NOBLUDGEON
+	force = 0
+
+/obj/item/coolant_tube/afterattack(obj/D, mob/living/silicon/robot/user)
+	if(!istype(D,/obj/item/reagent_containers/glass) && !istype(D,/obj/item/reagent_containers/food/drinks) && !istype(D,/obj/structure/reagent_dispensers))
+		to_chat(user, "<span class='warning'>You can't drink from the [D]!</span>" )
+		return 0
+	if(user.fluids >= 500)
+		to_chat(user, "<span class='warning'>Your coolant tank can't hold anymore.</span>" )
+		return 0
+	if(!D.reagents || !D.reagents.total_volume)
+		to_chat(user, "<span class='warning'>[D] is empty!</span>")
+		return 0
+
+	if (!D.is_drainable())
+		to_chat(user, "<span class='warning'>[D]'s lid hasn't been opened!</span>")
+		return 0
+
+	user.visible_message("<span class='notice'>[user] swallows a gulp of [D].</span>", "<span class='notice'>You swallow a gulp of [D].</span>")
+	var/drinkage
+	if("amount_per_transfer_from_this" in D.vars)
+		drinkage = D:amount_per_transfer_from_this
+	else
+		drinkage = 10
+	if(user.fluids + drinkage > 500)
+		D.reagents.trans_to(user.reagents,500 - user.fluids, no_react = TRUE)
+		user.fluids = 500
+	else
+		if(D.reagents.total_volume < drinkage)
+			user.fluids += D.reagents.total_volume
+			D.reagents.trans_to(user.reagents,D.reagents.total_volume, no_react = TRUE)
+		else
+			D.reagents.trans_to(user.reagents,drinkage, no_react = TRUE)
+			user.fluids += drinkage
+	if(user.fluids >= 75 && user.needfluid == 1)
+		user.needfluid--
+		to_chat(user, "<span class='notice'>That uncomfortable sweltering feeling has died down.</span>")
+	if(user.needfluid == 2)
+		user.needfluid = 1
+		to_chat(user, "<span class='notice'>The soothing liquid provides you a brief reprieve from overheating.</span>")
+	if(user.needfluid == 3)
+		user.needfluid = 1
+		to_chat(user, "<span class='notice'>You've managed to cool off slightly, and the pain has stopped. That was close!</span>")
+	user.overheattimer = 0
+	playsound(user.loc,'sound/items/drink.ogg', rand(10,50), 1)
+	return 1
+
+
+

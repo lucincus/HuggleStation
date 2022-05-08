@@ -10,6 +10,7 @@
 	var/list/rangers = list()
 	var/stop = 0
 	var/volume = 70
+	var/list/songs = list()
 	var/datum/track/selection = null
 
 /obj/machinery/jukebox/disco
@@ -28,6 +29,24 @@
 	anchored = TRUE
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 	flags_1 = NODECONSTRUCT_1
+
+/obj/machinery/jukebox/Initialize(mapload)
+	. = ..()
+	var/list/tracks = flist("[global.config.directory]/jukebox_music/sounds/")
+
+	for(var/S in tracks)
+		var/datum/track/T = new()
+		T.song_path = file("[global.config.directory]/jukebox_music/sounds/[S]")
+		var/list/L = splittext(S,"+")
+		if(L.len != 3)
+			continue
+		T.song_name = L[1]
+		T.song_length = text2num(L[2])
+		T.song_beat = text2num(L[3])
+		songs |= T
+
+	if(songs.len)
+		selection = pick(songs)
 
 /obj/machinery/jukebox/Destroy()
 	dance_over()
@@ -76,7 +95,7 @@
 	var/list/data = list()
 	data["active"] = active
 	data["songs"] = list()
-	for(var/datum/track/S in SSjukeboxes.songs)
+	for(var/datum/track/S in songs)
 		var/list/track_data = list(
 			name = S.song_name
 		)

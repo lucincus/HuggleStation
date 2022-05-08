@@ -69,8 +69,11 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 		SEND_SIGNAL(H.back, COMSIG_TRY_STORAGE_SHOW, H)
 
 	to_chat(quirk_holder, "<span class='boldnotice'>There is a precious family [heirloom.name] [where], passed down from generation to generation. Keep it safe!</span>")
-	var/list/family_name = splittext(quirk_holder.real_name, " ")
-	heirloom.name = "\improper [family_name[family_name.len]] family [heirloom.name]"
+
+	var/list/names = splittext(quirk_holder.real_name, " ")
+	var/family_name = names[names.len]
+
+	heirloom.AddComponent(/datum/component/heirloom, quirk_holder.mind, family_name)
 
 /datum/quirk/family_heirloom/on_process()
 	if(heirloom in quirk_holder.GetAllContents())
@@ -467,7 +470,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 /datum/quirk/fecalincontinence/add()
 	. = ..()
 	SEND_SIGNAL(quirk_holder, COMSIG_DIAPERCHANGE, ckey(quirk_holder.mind.key))
-	quirk_holder.max_messcontinence = 50
+	quirk_holder.max_messcontinence = rand(25, 75)
 
 /datum/quirk/fecalincontinence/remove()
 	. = ..()
@@ -486,7 +489,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 /datum/quirk/urinaryincontinence/add()
 	. = ..()
 	SEND_SIGNAL(quirk_holder, COMSIG_DIAPERCHANGE, ckey(quirk_holder.mind.key))
-	quirk_holder.max_wetcontinence = 50
+	quirk_holder.max_wetcontinence = rand(25, 75)
 
 /datum/quirk/urinaryincontinence/remove()
 	. = ..()
@@ -537,3 +540,10 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	gain_text = "<span class='notice'>Your insides rumble ominously.</span>"
 	lose_text = "<span class='notice'>You feel less bloated!</span>"
 	medical_record_text = "Patient exhibits symptoms of an accelerated metabolism for food and drinks."
+
+/datum/quirk/bathroombanned
+	name = "Bathroom Banned"
+	desc = "Your waste would clog any toilet."
+	value = 0
+	mob_trait = TRAIT_BATHROOMBANNED
+	medical_record_text = "Patient's stool and urine are incredibly corrosive to plumbing systems."

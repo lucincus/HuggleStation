@@ -201,6 +201,14 @@
 	name = "Kabuto helmet"
 	path = /obj/item/clothing/head/kabuto
 
+/datum/gear/head/iswmr
+	name = "ISWM replica beret (blue)"
+	path = /obj/item/clothing/head/iswmr
+
+/datum/gear/head/iswmo
+	name = "ISWM replica beret (orange)"
+	path = /obj/item/clothing/head/iswmo
+
 /datum/gear/head/bonnet
 	name = "Polychromic Bonnet"
 	path = /obj/item/clothing/head/bonnet/poly

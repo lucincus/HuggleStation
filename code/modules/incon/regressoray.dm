@@ -53,3 +53,18 @@
 	selfcharge = 0
 	item_flags = NONE
 	pin = null
+
+/obj/item/gun/energy/carbygun
+	name = "carbuncle gun"
+	desc = "A gun made for problems you just wanna throw carbuncles at, fashioned to look like a grimoire."
+	icon = 'icons/obj/library.dmi'
+	icon_state ="bookcarby"
+	ammo_type = list(/obj/item/ammo_casing/energy/carby)
+	ammo_x_offset = 1
+	selfcharge = 1
+	item_flags = NONE
+
+/obj/item/ammo_casing/energy/carby
+	fire_sound = 'sound/machines/click.ogg'
+	harmful = FALSE
+	projectile_type = /obj/item/toy/plush/carby

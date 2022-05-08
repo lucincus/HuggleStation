@@ -290,7 +290,8 @@
 	var/obj/item/card/id/C = H.wear_id
 	if(istype(C) && C.bank_support)
 		C.access = J.get_access()
-		C.access.Add(ACCESS_POTTY)
+		if((preference_source.prefs.all_quirks.Find("Bathroom Banned") == 0))
+			C.access.Add(ACCESS_POTTY)
 		shuffle_inplace(C.access) // Shuffle access list to make NTNet passkeys less predictable
 		C.registered_name = H.real_name
 		C.assignment = J.title

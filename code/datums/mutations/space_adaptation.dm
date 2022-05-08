@@ -1,4 +1,4 @@
-//Cold Resistance gives your entire body an orange halo, and makes you immune to the effects of vacuum and cold.
+	//Cold Resistance gives your entire body an orange halo, and makes you immune to the effects of vacuum and cold.
 /datum/mutation/human/space_adaptation
 	name = "Space Adaptation"
 	desc = "A strange mutation that renders the host immune to the vacuum of space. Will still need an oxygen supply."

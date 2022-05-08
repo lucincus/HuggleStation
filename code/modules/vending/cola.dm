@@ -13,9 +13,15 @@
 					/obj/item/reagent_containers/food/drinks/soda_cans/pwr_game = 10,
 					/obj/item/reagent_containers/food/drinks/soda_cans/lemon_lime = 10,
 					/obj/item/reagent_containers/food/drinks/soda_cans/sol_dry = 10,
-					/obj/item/reagent_containers/glass/beaker/waterbottle = 10)
+					/obj/item/reagent_containers/glass/beaker/waterbottle = 10,
+					/obj/item/reagent_containers/food/drinks/soda_cans/pspspsi = 10,
+					/obj/item/reagent_containers/food/drinks/soda_cans/drpupper = 10,
+					/obj/item/reagent_containers/food/drinks/soda_cans/inwat = 10,
+					/obj/item/reagent_containers/food/drinks/soda_cans/pinkcan = 10)
 	contraband = list(/obj/item/reagent_containers/food/drinks/soda_cans/thirteenloko = 6,
 					/obj/item/reagent_containers/food/drinks/soda_cans/shamblers = 6,
+					/obj/item/reagent_containers/food/drinks/soda_cans/sunnyp = 6,
+					/obj/item/reagent_containers/food/drinks/soda_cans/mtndo = 6,
 					/obj/item/reagent_containers/glass/beaker/waterbottle/wataur = 2)
 	premium = list(/obj/item/reagent_containers/food/drinks/drinkingglass/filled/nuka_cola = 1,
 					/obj/item/reagent_containers/food/drinks/soda_cans/air = 1,
@@ -73,6 +79,12 @@
 	name = "\improper Pwr Game Vendor"
 	desc = "You want it, we got it. Brought to you in partnership with Vlad's Salads."
 	product_slogans = "The POWER that gamers crave! PWR GAME!"
+
+/obj/machinery/vending/cola/instaw
+	icon_state = "instaw"
+	name = "\improper Instant Water Vendor"
+	desc = "A new and refreshing experience!."
+	product_slogans = "Just add water!"
 
 /obj/machinery/vending/cola/shamblers
 	name = "\improper Shambler's Vendor"

@@ -1103,6 +1103,28 @@
 	hat_offset = -4
 	canDispose = TRUE
 
+/obj/item/robot_module/standard/incon
+
+/obj/item/robot_module/medical/incon
+
+/obj/item/robot_module/engineering/incon
+
+/obj/item/robot_module/security/incon
+
+/obj/item/robot_module/peacekeeper/incon
+
+/obj/item/robot_module/clown/incon
+
+/obj/item/robot_module/butler/incon
+
+/obj/item/robot_module/miner/incon
+
+/obj/item/robot_module/syndicate/incon
+
+/obj/item/robot_module/syndicate_medical/incon
+
+/obj/item/robot_module/saboteur/incon
+
 /datum/robot_energy_storage
 	var/name = "Generic energy storage"
 	var/max_energy = 30000

@@ -142,6 +142,20 @@
 	color_src = MATRIXED
 	matrixed_sections = MATRIX_RED
 
+/datum/sprite_accessory/ears/protogen
+	name = "Protogen"
+	icon_state = "protogen"
+	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	color_src = MATRIXED
+	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/ears/protwogen
+	name = "Protogen(alt)"
+	icon_state = "protwogen"
+	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
+	color_src = MATRIXED
+	matrixed_sections = MATRIX_RED
+
 /datum/sprite_accessory/ears/fox
 	name = "Fox"
 	icon_state = "fox"
@@ -331,6 +345,16 @@
 	name = "Fennec"
 	icon_state = "fennec"
 	matrixed_sections = MATRIX_RED_BLUE
+
+/datum/sprite_accessory/ears/mam_ears/protogen
+	name = "Protogen"
+	icon_state = "protogen"
+	matrixed_sections = MATRIX_RED
+
+/datum/sprite_accessory/ears/mam_ears/protwogen
+	name = "Protogen(alt)"
+	icon_state = "protwogen"
+	matrixed_sections = MATRIX_RED
 
 /datum/sprite_accessory/ears/mam_ears/fish
 	name = "Fish"

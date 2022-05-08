@@ -356,6 +356,7 @@
 				to_chat(M,"<span class='notice'>It is about [diappercent1]% wet and [diappercent2]% messy.</span>")
 
 		else
+			SEND_SIGNAL(M, COMSIG_CARBON_HUG, M, src)
 			M.visible_message("<span class='notice'>[M] hugs [src] to make [p_them()] feel better!</span>", \
 						"<span class='notice'>You hug [src] to make [p_them()] feel better!</span>", target = src,\
 						target_message = "<span class='notice'>[M] hugs you to make you feel better!</span>")

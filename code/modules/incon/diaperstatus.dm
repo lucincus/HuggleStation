@@ -20,13 +20,153 @@
 /obj/item/var/soiled = FALSE
 /mob/living/carbon/human/var/soiledunderwear = FALSE
 /mob/living/carbon/human/var/wearingpoopy = FALSE
+/mob/living/silicon/robot/var/onpurpose = 0
+/mob/living/silicon/robot/var/pee = 0
+/mob/living/silicon/robot/var/on_purpose = 0
+/mob/living/silicon/robot/var/wetness = 0
+/mob/living/silicon/robot/var/fluids = 0
+/mob/living/silicon/robot/var/needpee = 0
+/mob/living/silicon/robot/var/brand = "plain"
+/mob/living/silicon/robot/var/brand2 = "diaper"
+/mob/living/silicon/robot/var/brand3 = "plain"
+/mob/living/silicon/robot/var/heftersbonus = 0
+/mob/living/silicon/robot/var/statusoverlay = null
+/mob/living/silicon/robot/var/incontinent = FALSE
+/mob/living/silicon/robot/var/diaperoverlay = null
+/mob/living/silicon/robot/var/datum/sprite_accessory/underwear/underwear = new /datum/sprite_accessory/underwear/bottom/diaper()
+/mob/living/silicon/robot/var/undie_color = "FFFFFF"
+/mob/living/silicon/robot/var/overheattimer = 0
+/mob/living/silicon/robot/var/needfluid = 0
+
+/mob/living/silicon/robot/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/diaperswitch)
+
+//This is the SQLite database where all the flavortext is stored
+var/database/db = new("code/modules/incon/InconFlavortextDB.db")
+//To view it, use a website like https://sqliteonline.com/ or a program like https://sqlitebrowser.org/dl/
+//Each row has a "selfmessage" column (what the player will see), an "othersmessage" column (what the other players will see if appropriate), a unique ID, and a whole list of boolean columns that act as flags
+//When adding rows to the database, each flag should be set to 0 or 1 depending on if a player with that state/condition/etc should be shown the message
+//e.g. the "onpurpose" flag should be 1 if and only if the message should be displayed when the player tries to poop or pee on purpose
+//So if you want to add more content, just paste the appropriate messages in the "selfmessage" and "othersmessage" columns in the BYOND-friendly formatting that you would otherwise put in the code,
+//go through each of the columns and decide which flags you want to give the message, save the database file, and replace the one in the incon folder
+//And that's it!
+
+
 
 /mob/living/carbon/human/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/diaperswitch)
 
+
+
+/mob/living/carbon/proc/DisplayFlavortextMessage(messageType) //this proc handles all the flavortext messages for accidents and warnings
+															  //the argument is a string that specifies the desired message
+
+	var/pottyState = "notoilet" 	//this variable represents if the player is on a toilet, potty, or similar device
+									//valid options here are: notoilet, usingtoilet, usingpotty
+
+	var/purposeState = "notonpurpose"	//this variable represents if the player is using their diaper/potty on purpose, or if it's been forced
+										//valid options are: onpurpose, notonpurpose
+
+	var/taurState = "isnottaur"	//this represents if the player is a non-taur, or any kind of taur (with no distinguishing between the types currently)
+								//valid options are: istaur, isnottaur
+
+	var/tailState = "notail"	//this represents if the player has any kind of tail, or no tail (with no distinguishing between the types of tails
+								//valid options are: hastail, notail
+								//right now, we can't check if people have tails; I don't understand how the tails work in this game at the moment
+
+	if(ishuman(src))	//if the player is a human, we check for the taur DNA feature
+		var/mob/living/carbon/human/H = src
+		if (H.dna.features["taur"] != "None")	//if we find that they're some sort of taur, we set their taurState to the appropriate value
+			taurState = "istaur"
+
+	if (istype(src.buckled,/obj/structure/potty)) //if the player is buckled onto a potty or toilet, we set the potty state to the appropriate value
+		pottyState = "usingpotty"
+	if (istype(src.buckled,/obj/structure/toilet))
+		pottyState = "usingtoilet"
+
+	if(on_purpose)	//if the player is pooping/peeing/etc on purpose, we set their purposeState to the appropriate value
+		purposeState = "onpurpose"
+
+
+	// for the folowwing query, we're asking the database to randomly pick exactly one row that was "True" in all the requested column
+	// the database is structured so each column functions like a flag, specifying if that message is comparible with a current state: e.g., the "onpotty" colunm is true if and only if that message would make sense to display while a player is sitting on a potty
+	// each set of brackets is replaced by a column name specifying different player states: if they're a taur, if they have a tail, if they're having an accident on purpose or not, and if they're on a toilet or potty
+	// by supplying each of these column names in the query, the query returns a row that is guarenteed to be applicable to the player's current situation
+	var/FlavortextQueryText = text("SELECT * FROM InconFlavortextDB WHERE [] = 1 AND [] = 1 AND [] = 1 AND [] = 1 AND [] = 1 ORDER BY RANDOM() LIMIT 1", pottyState, tailState, taurState, purposeState, messageType)
+	//var/database/query/messingQuery = new("SELECT * FROM InconFlavortextDB WHERE ((usingpotty = ?) AND (usingtoilet = ?) AND (onpurpose = ?) AND (poopaccident = 1) AND (? = 1)) ORDER BY RANDOM() LIMIT 1", onPotty, onToilet,on_purpose, taurState)
+	var/database/query/FlavortextQuery = new(FlavortextQueryText)
+
+	//if the query does not execute perfectly (and returns a "false"), we display a few error messages in chat for troubleshooting purposes
+	if(!FlavortextQuery.Execute(db))
+		to_chat(src, "SQL Query Error: " + FlavortextQuery.ErrorMsg() + " Database Error: " + db.ErrorMsg())
+	else
+		//otherwise, we load the first row, and display the data
+		FlavortextQuery.NextRow()
+		var/FlavortextQueryResponse = FlavortextQuery.GetRowData()
+		src.visible_message(FlavortextQueryResponse["othersmessage"],FlavortextQueryResponse["selfmessage"])
+
 /mob/living/carbon/proc/Wetting()
-	if (pee > 0 && stat != DEAD && src.client.prefs != "Poop Only")
+	if (pee > 0 && stat != DEAD && src.client.prefs != "Poop Only") //this checks if the player actually needs to pee, is alive, and has pee enabled
+		needpee = 0	//if we make it this far, we clear the "needpee" flag - we're now peeing
+
+		//first of all, play the pee sound
+		if(src.client.prefs.accident_sounds == TRUE)
+			playsound(loc, 'sound/effects/pee-diaper.wav', 50, 1)
+
+		//Next we check if the player is on a potty or toilet at the time they pee and, if so, they're rewarded with some extra continence
+		if (istype(src.buckled,/obj/structure/potty) || istype(src.buckled,/obj/structure/toilet))
+			if (max_wetcontinence < 100)
+				max_wetcontinence++
+		else
+			//if the amount of pee inside a player is higher than the max continence, we knock it down to the max continence
+			if(pee > max_wetcontinence)
+				pee = max_wetcontinence
+
+			//this block of code allows people to pee on the floor if they're nude (in the future)
+			if(ishuman(src))
+				var/mob/living/carbon/human/H = src
+				if(H.hidden_underwear == TRUE || H.underwear == "Nude")
+					pee = 0
+					new /obj/effect/decal/cleanable/waste/peepee(loc)
+
+
+			//this block updates the wetness of the diaper
+			//
+			//if the "wetness" of the diaper won't be overflowing, even with the pee about to be added, it's added like normal
+			//otherwise, the wetness of the diaper is maxed, and a pee puddle is spawned on the floor
+			//
+			//if leaking occurs, the player is penalized with an extra reduction in continence, unlesss they're already under 25% continent
+
+			if(wetness + pee < 200 + heftersbonus)
+				wetness = wetness + pee
+				pee = 0
+			else
+				wetness = 200 + heftersbonus
+				new /obj/effect/decal/cleanable/waste/peepee(loc)
+			if(max_wetcontinence > 25)
+				max_wetcontinence-=1
+
+		//finally, we want to display the actual pee flavortext
+		//
+		//we start by checkinng if the player is totally incontinent
+		//if they are, no message is displayed to anyone
+		//this should be changed at some point, but for now, this is the best we can do
+		if (!HAS_TRAIT(src,TRAIT_FULLYINCONTINENT))
+			//if the player is not fully incontinent, we call the proc to display the flavortext, specifying the sort of message we want to see
+			DisplayFlavortextMessage("peeaccident")
+
+		//Finally, regardless of if the player is on a toilet or not, we set pee to 0 and remove the on_purpose flag.
+		pee = 0
+		on_purpose = 0
+		//and thats the end of the pee action!
+
+	else if (stat == DEAD)
+		to_chat(src,"You can't pee, you're dead!")
+
+/mob/living/silicon/robot/proc/Wetting()
+	if (pee > 0 && stat != DEAD && incontinent == TRUE)
 		needpee = 0
 		if(src.client.prefs.accident_sounds == TRUE)
 			playsound(loc, 'sound/effects/pee-diaper.wav', 50, 1)
@@ -72,13 +212,13 @@
 				var/mob/living/carbon/human/H = src
 				if(H.hidden_underwear == TRUE || H.underwear == "Nude")
 					pee = 0
-					new /obj/effect/decal/cleanable/waste/peepee(loc)
+					new /obj/effect/decal/cleanable/waste/peepee(loc, get_static_viruses())
 			if(wetness + pee < 200 + heftersbonus)
 				wetness = wetness + pee
 				pee = 0
 			else
 				wetness = 200 + heftersbonus
-				new /obj/effect/decal/cleanable/waste/peepee(loc)
+				new /obj/effect/decal/cleanable/waste/peepee(loc, get_static_viruses())
 			if(max_wetcontinence > 25)
 				max_wetcontinence-=1
 		pee = 0
@@ -87,54 +227,30 @@
 		to_chat(src,"You can't pee, you're dead!")
 
 /mob/living/carbon/proc/Pooping()
-	if (poop > 0 && stat != DEAD && src.client.prefs != "Pee Only")
-		needpoo = 0
+
+	if (poop > 0 && stat != DEAD && src.client.prefs != "Pee Only") //this checks if the player actually needs to poop, is alive, and has poop enabled
+		needpoo = 0 //if we make it this far, we clear the "needpoo" flag
+
+		//first of all, play the poop sound
 		if(src.client.prefs.accident_sounds == TRUE)
 			playsound(loc, 'sound/effects/uhoh.ogg', 50, 1)
+
+		//if the amount of poop inside a player is higher than the max continence, we knock it down to the max continence
+		if(poop > max_messcontinence)
+			poop = max_messcontinence
+
+		//Next, if the player makes it to a potty or toilet, they are rewarded with an increase in their continence
 		if (istype(src.buckled,/obj/structure/potty) || istype(src.buckled,/obj/structure/toilet))
-			if (istype(src.buckled,/obj/structure/potty))
-				if (!HAS_TRAIT(src,TRAIT_FULLYINCONTINENT))
-					src.visible_message("<spawn class='notice'>[src] pulls [src.p_their()] pants down and goes poopy in the potty like a big kid.</span>","<span class='notice'>You tug your pants down and go poopy in the potty like a big kid.</span>")
-				if (max_messcontinence < 100)
-					max_messcontinence++
-			if (istype(src.buckled,/obj/structure/toilet))
-				if (!HAS_TRAIT(src,TRAIT_FULLYINCONTINENT))
-					src.visible_message("<span class='notice'>[src] pulls [src.p_their()] pants down, and poops in the toilet.</span>","<span class='notice'>You pull your pants down, and poop in the toilet.</span>")
-				if (max_messcontinence < 100)
-					max_messcontinence++
-		/*if (istype(src.buckled,/obj/structure/toilet))
-			if (!HAS_TRAIT(src,TRAIT_FULLYINCONTINENT))
-				src.visible_message("<span class='notice'>[src] pulls [src.p_their()] pants down, and poops in the toilet.</span>","<span class='notice'>You pull your pants down, and poop in the toilet.</span>")
 			if (max_messcontinence < 100)
-				max_messcontinence++*/
-		else
-			if (!HAS_TRAIT(src,TRAIT_FULLYINCONTINENT))
-				if (on_purpose == 1)
-					switch(rand(5)) //poop on purpose
-						if(0)
-							src.visible_message("<span class='notice'>An odor pervades the room as [src] dumps [src.p_their()] drawers.</span>","<span class='notice'>An odor pervades the room as you dump your drawers.</span>")
-						if(1)
-							src.visible_message("<span class='notice'>An odor pervades the room as [src] poops [src.p_their()] pants.</span>","<span class='notice'>An odor pervades the room as you poop your pants.</span>")
-						if(2)
-							src.visible_message("<span class='notice'>An odor pervades the room as [src] soils [src.p_their()] undergarmets.</span>","<span class='notice'>An odor pervades the room as you soil your undergarmets.</span>")
-						if(3)
-							src.visible_message("<span class='notice'>[usr] grabs [src.p_their()] midsection and squats, a foul scent quickly surrounding [src.p_them()].</span>","<span class='notice'>You wrap your arms around your tummy and bend your knees, pushing gently as the internal pressure subsides and your bottom grows warm.</span>")
-						if(4)
-							src.visible_message("<span class='notice'>[usr] seems to focus on something, and a foul odor is spreading.</span>","<span class='notice'>Hunching forward slightly, your face scrunches from effort as you slowly force the contents of your bowels into your diaper, expanding it backwards.</span>")
-						else
-							src.visible_message("<span class='notice'>[usr]'s cheeks flush as a foul stench surrounds [src.p_them()].</span>","<span class='notice'>Unable to cope with the pressure, you trust your underwear to protect your outfit as you let your bowels empty.</span>")
-				else
-					switch(rand(3))	//poop accident
-						if(0)
-							src.visible_message("<span class='notice'>[src] takes a squat and winces as [src.p_their()] seat sags just a little more.</span>","<span class='notice'>That tight feeling in your gut is gone. But your diaper seems a bit saggier- and stinkier.</span>")
-						if(1)
-							src.visible_message("<span class='notice'>[usr]'s bottom makes some rude noises, followed by a soft squishing sound.</span>","<span class='notice'>A burst of gas escapes your bottom, followed by another, and then something that definitely isn't gas.</span>")
-						if(2)
-							src.visible_message("<span class='notice'>You see [src] shiver slightly, and their diaper sags a noticable amount.</span>","<span class='notice'>You feel your diaper sag as you release the pressure from your backside</span>")
-						else
-							src.visible_message("<span class='notice'>You smell something unpleasant coming from [usr]'s direction. [src.p_they()] don't seem to notice, though.</span>","<span class='notice'>You feel an odd pressure in your stomach, before it quickly goes away.</span>")
-			if(poop > max_messcontinence)
-				poop = max_messcontinence
+				max_messcontinence++
+		else //this removes continence from the player if they use their diaper, unless it is already below 20%
+			if(max_messcontinence > 20)
+				max_messcontinence-=2
+
+
+			//this block controls the state of your displayed clothing, and also diaper capacity
+			//which makes some sense, I guess
+			//I don't 100% understand this code, so I am commenting it less
 			if(ishuman(src))
 				var/mob/living/carbon/human/H = src
 				if((H.hidden_underwear == TRUE || H.underwear == "Nude") && !H.dna.features["taur"])
@@ -146,7 +262,7 @@
 							H.wear_suit.soiled = TRUE
 							H.update_inv_wear_suit()
 					poop = 0
-				if(stinkiness + poop < 150 + heftersbonus)
+				if(stinkiness + poop < 150 + heftersbonus) //looks like 150 is the hardcoded default diaper capacity
 					stinkiness = stinkiness + poop
 					if(H.hidden_underwear == FALSE && H.underwear != "Nude")
 						H.soiledunderwear = TRUE
@@ -156,14 +272,26 @@
 					if(H.hidden_underwear == FALSE && H.underwear != "Nude")
 						H.soiledunderwear = TRUE
 						H.update_body()
+
+			//this block gives you stink lines if you don't already have them, and you meet the criteria
 			if(stinkiness > ((150 + heftersbonus) / 2) && stinky == FALSE)
 				statusoverlay = mutable_appearance('icons/incon/Effects.dmi',"generic_mob_stink",STINKLINES_LAYER, color = rgb(125, 241, 16))
 				overlays += statusoverlay
 				stinky = TRUE
-			if(max_messcontinence > 20)
-				max_messcontinence-=2
+
+		//finally, we want to display the actual pee flavortext
+		//
+		//we start by checkinng if the player is totally incontinent
+		//if they are, no message is displayed to anyone
+		//this should be changed at some point, but for now, this is the best we can do
+		if (!HAS_TRAIT(src,TRAIT_FULLYINCONTINENT))
+		    //if the player is not fully incontinent, we call the proc to display the flavortext, specifying the sort of message we want to see
+			DisplayFlavortextMessage("poopaccident")
+
+		//finally, we clear the "on_purpose" flag and set poop to 0
 		on_purpose = 0
 		poop = 0
+
 	else if (stat == DEAD)
 		to_chat(src,"You can't poop, you're dead!")
 
@@ -201,47 +329,21 @@
 			fluids = fluids - 10
 		if (fluids < 0)
 			fluids = 0
+
+
 		if (pee >= max_wetcontinence * 0.5 && needpee <= 0 && !HAS_TRAIT(src,TRAIT_FULLYINCONTINENT))
-			switch(rand(1))
-				if(1)
-					to_chat(src,"You start feeling the need to pee.")
-				else
-					to_chat(src,"You abdomen starts to feel tight and uncomfortable, you think about urinating.")
+			DisplayFlavortextMessage("peefirstwarning")
 			needpee += 1
 		if (pee >= max_wetcontinence * 0.8 && needpee <= 1 && !HAS_TRAIT(src,TRAIT_FULLYINCONTINENT))
-			switch(rand(2))
-				if(1)
-					to_chat(src,"<span class='warning'>You really need to pee!</span>")
-				if(2)
-					to_chat(src,"<span class='warning'>Your body desperately fidgets and wriggles in an attempt to restrain your bladder a little bit longer...</span>")
-				else
-					to_chat(src,"<span class='warning'>You feel a squirt of pee escape!</span>")
-
+			DisplayFlavortextMessage("peesecondwarning")
 			needpee += 1
 		if (poop >= max_messcontinence * 0.5 && needpoo <= 0 && !HAS_TRAIT(src,TRAIT_FULLYINCONTINENT))
-			switch(rand(5))
-				if(1)
-					to_chat(src,"You start feeling the need to poop.")
-				if(2)
-					to_chat(src,"Gas squeaks out, releasing a bit of pressure you didn't know you had.")
-				if(3)
-					to_chat(src,"You feel a soft gurgling from your tummy.")
-				if(4)
-					to_chat(src,"You feel your insides shift a bit")
-				else
-					to_chat(src,"You feel a slight pressure in your backside")
+			DisplayFlavortextMessage("poofirstwarning")
 			needpoo += 1
 		if (poop >= max_messcontinence * 0.8 && needpoo <= 1 && !HAS_TRAIT(src,TRAIT_FULLYINCONTINENT))
-			switch(rand(4))
-				if(1)
-					to_chat(src,"<span class='warning'>You really need to poop!</span>")
-				if(2)
-					to_chat(src,"<span class='warning'>Your stomach gurgles and groans as a heavy weight descends into your bowels...</span>")
-				if(3)
-					to_chat(src,"<span class='warning'>You feel an immense pressure in your bowels!</span>")
-				else
-					to_chat(src,"<span class='warning'>You let out a fart that is dangerously wet!</span>")
+			DisplayFlavortextMessage("poosecondwarning")
 			needpoo += 1
+
 		if (pee >= max_wetcontinence && src.client.prefs != "Poop Only")
 			Wetting()
 		else if(pee >= max_wetcontinence)
@@ -516,6 +618,142 @@
 	spawn(60)
 		PampUpdate()
 
+/mob/living/silicon/robot/proc/PampUpdate2()
+	if(incontinent == TRUE)
+		pee = pee + ((20 + rand(0, 10))/100) + (fluids / 3000)
+		if (wetness >= 1)
+			SEND_SIGNAL(src,COMSIG_ADD_MOOD_EVENT,"peepee",/datum/mood_event/soggysad)
+		if (fluids < 75 && needfluid == 0)
+			needfluid++
+			to_chat(src, "<span class ='warning'>Your chassis is uncomfortably warm.</span>")
+		if (fluids == 0)
+			if(needfluid == 1)
+				needfluid++
+				to_chat(src, "<span class ='warning'>Your chassis is nearing dangerously high heat levels!</span>")
+			overheat()
+		else
+			cell.charge = cell.maxcharge
+	if (fluids > 0)
+		var/feh = rand()
+		fluids -= feh
+		reagents.remove_any(feh)
+	if (fluids < 0)
+		fluids = 0
+	if (pee >= max_wetcontinence && incontinent == TRUE)
+		Wetting()
+	else if(pee >= max_wetcontinence)
+		pee = 0
+	switch(brand)
+		if ("plain")
+			set_light(0)
+			REMOVE_TRAIT(src,TRAIT_NOBREATH,INNATE_TRAIT)
+			SEND_SIGNAL(src,COMSIG_CLEAR_MOOD_EVENT,"sanshield")
+		if ("classics")
+			set_light(0)
+			REMOVE_TRAIT(src,TRAIT_NOBREATH,INNATE_TRAIT)
+			SEND_SIGNAL(src,COMSIG_CLEAR_MOOD_EVENT,"sanshield")
+		if ("swaddles")
+			set_light(0)
+			REMOVE_TRAIT(src,TRAIT_NOBREATH,INNATE_TRAIT)
+			SEND_SIGNAL(src,COMSIG_ADD_MOOD_EVENT,"sanshield",/datum/mood_event/sanitydiaper)
+		if ("hefters_m")
+			set_light(0)
+			REMOVE_TRAIT(src,TRAIT_NOBREATH,INNATE_TRAIT)
+			SEND_SIGNAL(src,COMSIG_CLEAR_MOOD_EVENT,"sanshield")
+		if ("hefters_f")
+			set_light(0)
+			REMOVE_TRAIT(src,TRAIT_NOBREATH,INNATE_TRAIT)
+			SEND_SIGNAL(src,COMSIG_CLEAR_MOOD_EVENT,"sanshield")
+		if ("Princess")
+			set_light(0)
+			REMOVE_TRAIT(src,TRAIT_NOBREATH,INNATE_TRAIT)
+			SEND_SIGNAL(src,COMSIG_CLEAR_MOOD_EVENT,"sanshield")
+		if ("PwrGame")
+			set_light(0)
+			REMOVE_TRAIT(src,TRAIT_NOBREATH,INNATE_TRAIT)
+			SEND_SIGNAL(src,COMSIG_CLEAR_MOOD_EVENT,"sanshield")
+		if ("StarKist")
+			set_light(3)
+			REMOVE_TRAIT(src,TRAIT_NOBREATH,INNATE_TRAIT)
+			SEND_SIGNAL(src,COMSIG_CLEAR_MOOD_EVENT,"sanshield")
+		if ("Space")
+			set_light(0)
+			ADD_TRAIT(src,TRAIT_NOBREATH,INNATE_TRAIT)
+			SEND_SIGNAL(src,COMSIG_CLEAR_MOOD_EVENT,"sanshield")
+		if ("Replica")
+			set_light(0)
+			REMOVE_TRAIT(src,TRAIT_NOBREATH,INNATE_TRAIT)
+			SEND_SIGNAL(src,COMSIG_CLEAR_MOOD_EVENT,"sanshield")
+		if ("Service")
+			set_light(0)
+			REMOVE_TRAIT(src,TRAIT_NOBREATH,INNATE_TRAIT)
+			SEND_SIGNAL(src,COMSIG_CLEAR_MOOD_EVENT,"sanshield")
+		if ("Supply")
+			set_light(0)
+			REMOVE_TRAIT(src,TRAIT_NOBREATH,INNATE_TRAIT)
+			SEND_SIGNAL(src,COMSIG_CLEAR_MOOD_EVENT,"sanshield")
+		if ("Hydroponics")
+			set_light(0)
+			REMOVE_TRAIT(src,TRAIT_NOBREATH,INNATE_TRAIT)
+			SEND_SIGNAL(src,COMSIG_CLEAR_MOOD_EVENT,"sanshield")
+		if ("Sec")
+			set_light(0)
+			REMOVE_TRAIT(src,TRAIT_NOBREATH,INNATE_TRAIT)
+			SEND_SIGNAL(src,COMSIG_CLEAR_MOOD_EVENT,"sanshield")
+		if ("Engineering")
+			set_light(0)
+			REMOVE_TRAIT(src,TRAIT_NOBREATH,INNATE_TRAIT)
+			SEND_SIGNAL(src,COMSIG_CLEAR_MOOD_EVENT,"sanshield")
+		if ("Atmos")
+			set_light(0)
+			REMOVE_TRAIT(src,TRAIT_NOBREATH,INNATE_TRAIT)
+			SEND_SIGNAL(src,COMSIG_CLEAR_MOOD_EVENT,"sanshield")
+		if ("Science")
+			set_light(0)
+			REMOVE_TRAIT(src,TRAIT_NOBREATH,INNATE_TRAIT)
+			SEND_SIGNAL(src,COMSIG_CLEAR_MOOD_EVENT,"sanshield")
+		if ("Med")
+			set_light(0)
+			REMOVE_TRAIT(src,TRAIT_NOBREATH,INNATE_TRAIT)
+			SEND_SIGNAL(src,COMSIG_CLEAR_MOOD_EVENT,"sanshield")
+		if ("Cult_Nar")
+			set_light(0)
+			REMOVE_TRAIT(src,TRAIT_NOBREATH,INNATE_TRAIT)
+			SEND_SIGNAL(src,COMSIG_CLEAR_MOOD_EVENT,"sanshield")
+		if ("Cult_Clock")
+			set_light(0)
+			REMOVE_TRAIT(src,TRAIT_NOBREATH,INNATE_TRAIT)
+			SEND_SIGNAL(src,COMSIG_CLEAR_MOOD_EVENT,"sanshield")
+		if ("Miner")
+			set_light(0)
+			REMOVE_TRAIT(src,TRAIT_NOBREATH,INNATE_TRAIT)
+			SEND_SIGNAL(src,COMSIG_CLEAR_MOOD_EVENT,"sanshield")
+		if ("Miner_thick")
+			set_light(0)
+			REMOVE_TRAIT(src,TRAIT_NOBREATH,INNATE_TRAIT)
+			SEND_SIGNAL(src,COMSIG_CLEAR_MOOD_EVENT,"sanshield")
+		if ("Ashwalker")
+			set_light(0)
+			REMOVE_TRAIT(src,TRAIT_NOBREATH,INNATE_TRAIT)
+			SEND_SIGNAL(src,COMSIG_CLEAR_MOOD_EVENT,"sanshield")
+		if ("alien")
+			set_light(0)
+			REMOVE_TRAIT(src,TRAIT_NOBREATH,INNATE_TRAIT)
+			SEND_SIGNAL(src,COMSIG_CLEAR_MOOD_EVENT,"sanshield")
+		if ("Jeans")
+			set_light(0)
+			REMOVE_TRAIT(src,TRAIT_NOBREATH,INNATE_TRAIT)
+			SEND_SIGNAL(src,COMSIG_CLEAR_MOOD_EVENT,"sanshield")
+	spawn(60)
+		PampUpdate2()
+
+/mob/living/silicon/robot/proc/overheat()
+	overheattimer++
+	if(overheattimer >= 90)
+		cell.charge = 0
+
+
+
 /mob/living/carbon/proc/DiaperAppearance()
 	SEND_SIGNAL(src,COMSIG_DIAPERCHANGE, ckey(src.mind.key))
 
@@ -558,10 +796,50 @@
 		SEND_SIGNAL(src,COMSIG_CLEAR_MOOD_EVENT,"peepee")
 		SEND_SIGNAL(src,COMSIG_CLEAR_MOOD_EVENT,"poopy")
 
+/mob/living/silicon/robot/proc/DiaperAppearance()
+	SEND_SIGNAL(src,COMSIG_DIAPERCHANGE, ckey(src.mind.key))
+
+/mob/living/silicon/robot/proc/DiaperChange(obj/item/diaper/diap)
+	var/turf/cuckold = null
+	var/newpamp
+	switch(src.dir)
+		if(1)
+			cuckold = locate(src.loc.x + 1,src.loc.y,src.loc.z)
+		if(2)
+			cuckold = locate(src.loc.x - 1,src.loc.y,src.loc.z)
+		if(4)
+			cuckold = locate(src.loc.x,src.loc.y - 1,src.loc.z)
+		if(8)
+			cuckold = locate(src.loc.x,src.loc.y + 1,src.loc.z)
+	if(brand == "syndi")
+		brand = "plain"
+	if (wetness >= 1)
+		newpamp = text2path(addtext("/obj/item/wetdiap/", brand))
+	else
+		newpamp = text2path(addtext("/obj/item/diaper/", brand))
+	new newpamp(cuckold)
+	wetness = 0
+	overlays -= statusoverlay
+	if(ishuman(src))
+		var/mob/living/carbon/human/H = src
+		H.soiledunderwear = FALSE
+		H.update_body()
+	brand = replacetext("[diap.type]", "/obj/item/diaper/", "")
+	if(HAS_TRAIT(src,TRAIT_FULLYINCONTINENT))
+		SEND_SIGNAL(src,COMSIG_CLEAR_MOOD_EVENT,"peepee")
+
 /mob/living/carbon/verb/Pee()
 	if(usr.client.prefs.accident_types != "Opt Out" || usr.client.prefs.accident_types != "Poop Only")
 		set category = "IC"
 	if(src.client.prefs.accident_types != "Opt Out" && !HAS_TRAIT(usr,TRAIT_FULLYINCONTINENT) && pee >= max_wetcontinence/2)
+		on_purpose = 1
+		Wetting()
+	else
+		to_chat(usr, "<span class='warning'>You cannot pee right now.</span>")
+
+/mob/living/silicon/robot/verb/Pee()
+	set category = "IC"
+	if(incontinent == TRUE && needpee > 0)
 		on_purpose = 1
 		Wetting()
 	else
@@ -579,6 +857,15 @@
 /mob/living/carbon/New()
 	..()
 	PampUpdate()
+
+/mob/living/silicon/robot/Initialize(mapload)
+	..()
+	PampUpdate2()
+	create_reagents(1000)
+	var/geh = rand(100,200)
+	fluids = geh
+	reagents.add_reagent(/datum/reagent/water,geh)
+	add_verb(src,/mob/living/silicon/robot/verb/Pee)
 
 /obj/item/reagent_containers/food/snacks/attack(mob/living/carbon/human/M, mob/living/user, def_zone)
 	..()
@@ -645,8 +932,28 @@
 	spawn(1)
 		DiaperUpdate(owner)
 
-/atom/movable/screen/diaperstatus/New(mob/living/carbon/owner)
-	DiaperUpdate(owner)
+/atom/movable/screen/diaperstatus/proc/DiaperUpdate2(mob/living/silicon/robot/owner)
+	if(owner.max_wetcontinence > 50)
+		owner.max_wetcontinence = 50
+	if(owner.incontinent == TRUE)
+		if (owner.wetness > 0)
+			icon_state = "hud_plain_wet"
+		else
+			icon_state = "hud_plain"
+	else
+		icon_state = null
+	if(owner.brand == "Science")
+		SSresearch.science_tech.add_point_type(TECHWEB_POINT_TYPE_GENERIC, 0.25)
+	if(owner.brand == "alien")
+		owner.wetness -= 0.1
+	spawn(1)
+		DiaperUpdate2(owner)
+
+/atom/movable/screen/diaperstatus/New(mob/living/owner)
+	if(iscarbon(owner))
+		DiaperUpdate(owner)
+	if(iscyborg(owner))
+		DiaperUpdate2(owner)
 
 /datum/hud/human/New(mob/living/carbon/owner)
 	..()
@@ -657,6 +964,12 @@
 	else
 		owner.max_wetcontinence = 100
 		owner.max_messcontinence = 100
+	diapstats.hud = src
+	infodisplay += diapstats
+
+/datum/hud/robot/New(mob/living/silicon/robot/owner)
+	..()
+	var/atom/movable/screen/diapstats = new /atom/movable/screen/diaperstatus(owner)
 	diapstats.hud = src
 	infodisplay += diapstats
 
@@ -693,3 +1006,7 @@
 /datum/mood_event/sanitydiaper
 	description = "<span class='nicegreen'>I can't describe it- this diaper makes me feel safe!\n</span>"
 	mood_change = 20
+
+/obj/item/stock_parts/cell/incon
+	charge = INFINITY
+	maxcharge = INFINITY
