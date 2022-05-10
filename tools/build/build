@@ -3,4 +3,4 @@
 #Build TGUI
 set -e
 cd "$(dirname "$0")"
-exec ../bootstrap/node build.js "$@"
+exec ../HuggleStation/bootstrap/node build.js "$@"
